@@ -9,3 +9,4 @@ $$
 \int_{0}^{1} x^2 \, dx = \frac{1}{3}
 $$
 
+Selbe Formel Inline: $\int_{0}^{1} x^2 \, dx = \frac{1}{3}$

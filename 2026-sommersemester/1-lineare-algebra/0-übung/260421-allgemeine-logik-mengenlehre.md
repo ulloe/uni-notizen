@@ -1,4 +1,4 @@
-# Einordnugn in die Vorlesung
+# Einordnung in die Vorlesung
 
 Bevor wir in der linearen Algebra mit Vektorräumen, linearen Abbildungen und Lösungsmengen arbeiten, müssen wir erst sicher mit Aussagen, logischen Verknüpfungen und Mengen umgehen können. 
 
@@ -13,6 +13,24 @@ Implikation: $A \Rightarrow B$
 *Ein Satz, der immer wieder Verwendung findet:*  
 $\left( (A \Rightarrow B) \land (B \Rightarrow C) \Rightarrow (A \Rightarrow C) \right)$
 
+# Grundlagen der Mengen
+
+Seien $A, B \subseteq \Omega$ zwei Mengen.
+
+**Mengenoperationen:**
+
+$\underbrace{A \cap B}_{Schnittmenge}$ &emsp;<img src="./bilder/cap.png" width="120" style="vertical-align: middle;">
+
+
+$\underbrace{A \cup B}_{Vereinigung}$ &emsp;<img src="./bilder/cup.png" width="120" style="vertical-align: middle;">
+
+
+$\underbrace{A \setminus B}_{Differenzmenge}$  &emsp;<img src="./bilder/setminus.png" width="120" style="vertical-align: middle;">
+
+
+$\underbrace{\bar A = \Omega \setminus A}_{Komplement}$  &emsp;<img src="./bilder/nota.png" width="120" style="vertical-align: middle;">
+
+$\underbrace{A \cap B = \{\}}_{Disjunkt}$  &emsp;<img src="./bilder/disj.png" width="120" style="vertical-align: middle;">
 
 
 
@@ -99,7 +117,7 @@ f) $\lnot(A \land B) = \lnot A \lor \lnot B$
 
 ## Aufgabe 2
 
-Zeigen Sie mit Hilfe einer Wahrheitstafel, dass die Aussagen $(A \Rightarrow B) \land (B \Rightarrow A)$ nur dann wahr ist, wenn A und B gleichzeitig wahr oder unwahr (und mithin) identsich sind.
+Zeigen Sie mit Hilfe einer Wahrheitstafel, dass die Aussage $(A \Rightarrow B) \land (B \Rightarrow A)$ nur dann wahr ist, wenn A und B gleichzeitig wahr oder unwahr (und mithin) identsich sind.
 
 $(A \Rightarrow B) := \lnot A \lor B$  
 $(B \Rightarrow A) := \lnot B \lor A$
@@ -121,30 +139,24 @@ Der Ausdruck ist nur dann wahr, wenn $A$ und $B$ beide gleichzeitig wahr oder gl
 
 ## Aufgabe 3
 
-Wir definieren den Aussagen $A, B, C, D$ als Folgende:
+Wir definieren die Aussagen $A, B, C, D$ als Folgende:
 
 $A$: Andrea geht in die Mensa.  
 $B$: Bernd geht in die Mensa.  
 $C$: Christiane geht in die Mensa.  
 $D$: Daniel geht in die Mensa.
 
-```math
-a) A \Rightarrow B \\ 
-b) \begin{cases}
-B \Rightarrow \lnot C \\
-C \Rightarrow \lnot B \\
-\end{cases} \\
-c) \begin{cases}
-\lnot A \Rightarrow C \\
-\lnot C \Rightarrow A \\
-\end{cases} \\
-d) D \Rightarrow \text{mindestens zwei der drei Aussagen} A, B, C \text{sind wahr} \\
-```
+
+$a) \quad A \Rightarrow B$  
+$b) \quad \begin{cases} B \Rightarrow \lnot C \\ C \Rightarrow \lnot B \\ \end{cases}$  
+$c) \quad \begin{cases} \lnot A \Rightarrow C \\ \lnot C \Rightarrow A \\ \end{cases}$  
+$d) \quad D \Rightarrow \text{mindestens zwei der drei Aussagen} A, B, C \text{sind wahr}$
+
 
 > Die Aussage $d)$ ist eine hinreichende Bedingung. $D$ ist keine Notwendigkeit.
 
 Da alle Aussagen erfüllt sein müssen, können wir das Kommutativgesetz anwenden und deren Reihenfolge beliebig tauschen. Daraus ergibt sich folgende Aussage:  
-$\lnot A \Rightarrow C \Rightarrow A \Leftrightarrow \lnot A \Rightarrow A$  
+$\lnot A \Rightarrow C \Rightarrow A \Leftrightarrow \lnot A \Rightarrow A \quad (ist \quad \lnot (\lnot A) \lor A = A \lor A)$  
 Das bedeutet, dass $A$ wahr sein muss, damit die Aussage wahr ist, also geht Andrea auf jeden Fall zur Mensa. Aus $A \Rightarrow B$ folgt, dass Bernd ebenfalls zur Mensa geht. Und aus $B \Rightarrow \lnot C$ folgt, dass Christiane nicht geht.  
 Damit ist die hinreichende Bedingung für $D$ gegeben. Daniel könnte zu Mensa gehen. Da wir keine Notwendigkeit haben, bleibt offen ob Daniel geht oder nicht.
 

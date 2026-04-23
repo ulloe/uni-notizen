@@ -38,22 +38,64 @@ Spalte $A \land B$ und Spalte $B \land A$ zeigen die gleichen Wahrheitswerte, da
 
 b) $A \lor\ (B \lor C) = (A \lor\ B) \lor C$
 
-> TODO: Wahrheitstabelle!
+| $A$ | $B$ | $C$ | $B \lor C$ | $A \lor (B ∨ C)$ | $A \lor B$ | $(A \lor B) \lor C$ |
+| - | - | - | ----- | ----------- | ----- | ----------- |
+| 0 | 0 | 0 | 0     | 0           | 0     | 0           |
+| 0 | 0 | 1 | 1     | 1           | 0     | 1           |
+| 0 | 1 | 0 | 1     | 1           | 1     | 1           |
+| 0 | 1 | 1 | 1     | 1           | 1     | 1           |
+| 1 | 0 | 0 | 0     | 1           | 1     | 1           |
+| 1 | 0 | 1 | 1     | 1           | 1     | 1           |
+| 1 | 1 | 0 | 1     | 1           | 1     | 1           |
+| 1 | 1 | 1 | 1     | 1           | 1     | 1           |
+
 
 c) $A \lor\ (B \land C) = (A \lor B) \land (A \lor C)$
 
-> TODO: Wahrheitstabelle!
+| $A$ | $B$ | $C$ | $B \land C$ | $A \lor (B \land C)$ | $A \lor B$ | $A \lor C$ | $(A \lor B) \land (A \lor C)$ |
+| - | - | - | ----- | ----------- | ----- | ----- | ----------------- |
+| 0 | 0 | 0 | 0     | 0           | 0     | 0     | 0                 |
+| 0 | 0 | 1 | 0     | 0           | 0     | 1     | 0                 |
+| 0 | 1 | 0 | 0     | 0           | 1     | 0     | 0                 |
+| 0 | 1 | 1 | 1     | 1           | 1     | 1     | 1                 |
+| 1 | 0 | 0 | 0     | 1           | 1     | 1     | 1                 |
+| 1 | 0 | 1 | 0     | 1           | 1     | 1     | 1                 |
+| 1 | 1 | 0 | 0     | 1           | 1     | 1     | 1                 |
+| 1 | 1 | 1 | 1     | 1           | 1     | 1     | 1                 |
+
 
 d) $A \land\ (B \lor C) = (A \land B) \lor (A \land C)$
 
-> TODO: Wahrheitstabelle!
+| $A$ | $B$ | $C$ | $B \lor C$ | $A \land (B \lor C)$ | $A \land B$ | $A \land C$ | $(A \land B) \lor (A \land C)$ |
+| - | - | - | ----- | ----------- | ----- | ----- | ----------------- |
+| 0 | 0 | 0 | 0     | 0           | 0     | 0     | 0                 |
+| 0 | 0 | 1 | 1     | 0           | 0     | 0     | 0                 |
+| 0 | 1 | 0 | 1     | 0           | 0     | 0     | 0                 |
+| 0 | 1 | 1 | 1     | 0           | 0     | 0     | 0                 |
+| 1 | 0 | 0 | 0     | 0           | 0     | 0     | 0                 |
+| 1 | 0 | 1 | 1     | 1           | 0     | 1     | 1                 |
+| 1 | 1 | 0 | 1     | 1           | 1     | 0     | 1                 |
+| 1 | 1 | 1 | 1     | 1           | 1     | 1     | 1                 |
+
 
 e) $\lnot(A \lor B) = \lnot A \land \lnot B$
 
-> TODO: Wahrheitstabelle!
+| $A$ | $B$ | $A \lor B$ | $\lnot (A \lor B)$ | $\lnot A$ | $\lnot B$ | $\lnot A \land \lnot B$ |
+| - | - | ----- | -------- | -- | -- | ------- |
+| 0 | 0 | 0     | 1        | 1  | 1  | 1       |
+| 0 | 1 | 1     | 0        | 1  | 0  | 0       |
+| 1 | 0 | 1     | 0        | 0  | 1  | 0       |
+| 1 | 1 | 1     | 0        | 0  | 0  | 0       |
+
 
 f) $\lnot(A \land B) = \lnot A \lor \lnot B$
 
+| $A$ | $B$ | $A \land B$ | $\lnot (A \land B)$ | $\lnot A$ | $\lnot B$ | $\lnot A \lor \lnot B$ |
+| - | - | ----- | -------- | -- | -- | ------- |
+| 0 | 0 | 0     | 1        | 1  | 1  | 1       |
+| 0 | 1 | 0     | 1        | 1  | 0  | 1       |
+| 1 | 0 | 0     | 1        | 0  | 1  | 1       |
+| 1 | 1 | 1     | 0        | 0  | 0  | 0       |
 
 ## Aufgabe 2
 
@@ -67,9 +109,15 @@ $(\lnot A \lor B) \land (\lnot B \lor A)$
 
 Diesen können wir wieder in eine Wahrheitstabelle einfügen und sehen:
 
-> TODO: Wahrheitstabelle!
+| $A$ | $B$ | $\lnot A \lor B$ | $\lnot B \lor A$ | $(\lnot A \lor B) \land (\lnot B \lor A)$ |
+| - | - | ----- | ----- | ----------------- |
+| 0 | 0 | 1     | 1     | 1                 |
+| 0 | 1 | 1     | 0     | 0                 |
+| 1 | 0 | 0     | 1     | 0                 |
+| 1 | 1 | 1     | 1     | 1                 |
 
-Der Ausdruck ist nur dann wahr, wenn $A$ und $B$ beide gleichzeitig wahr oder gliechzeitig unwahr und somit identisch sind. $_\square$
+
+Der Ausdruck ist nur dann wahr, wenn $A$ und $B$ beide gleichzeitig wahr oder gleichzeitig unwahr und somit identisch sind. $_\square$
 
 ## Aufgabe 3
 

@@ -182,6 +182,6 @@ $$
 4. **Induktionsschluss (*IS*)**:  
 $n \rightarrow n+1$
 
-$$
-    \sum_{i=1}^{n+1} i = n+1 + \sum_{i=1}^n \underset{IV}= n+1 + \frac{n(n+1)}{2} = \frac{2(n+1)}{2} + \frac{n(n+1)}{2} = \frac{(n+2)n+1)}{2} \quad _\square
-$$
+```math
+\sum_{i=1}^{n+1} i = n+1 + \sum_{i=1}^n \underset{IV}= n+1 + \frac{n(n+1)}{2} = \frac{2(n+1)}{2} + \frac{n(n+1)}{2} = \frac{(n+2)n+1)}{2}  _\square
+```

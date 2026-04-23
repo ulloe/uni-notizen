@@ -1,6 +1,6 @@
 # 1. Motivation
 - Grundlage der abstrakten Mathematik
-- Sprache und Handwerkszeug für viele Anwendungen (Ingeneure, Naturwissenschaften, WIrtschaftswissenschaften, ...)
+- Sprache und Handwerkszeug für viele Anwendungen (Ingeneure, Naturwissenschaften, Wirtschaftswissenschaften, ...)
 - Lineare mathematische Modelle lassen sich einfach behandeln. Nicht lineare Modelle lassen sich durch lineare Modelle approximieren.
 
 Lineares Modell:  
@@ -22,11 +22,7 @@ ist ein lineares Modell.
 Wobei $x_1$ der Preis eines Bündels guten Getreides entspricht, $x_2$ eines mittleren und $x_3$ eines schlechten.
 
 ### Vektor
-```math
-\begin{pmatrix}
-x_1 \\ x_2 \\ x_3
-\end{pmatrix}
-```
+$\begin{pmatrix}x_1 \\ x_2 \\ x_3\end{pmatrix}$
 ### Matrix-Vetkorform
 
 $Ax = b$
@@ -73,6 +69,7 @@ ANwendung in allen Lebensbereichen, z. B. Numerik, Optimierung, Stochastik
 b) $A^T Ax=A^T b$  
 **Lineare Ausgangsgleichung**  
 Gewinung mathematischer Modelle aus Messungen, Daten, Beobachtungen
+<img src="./bilder/ausgleichsrechnung.png" width="120" >  
 
 c) $Ax = \lambda x, \lambda \in \mathbb{R}$  
 **Eigenwertsproblem**  

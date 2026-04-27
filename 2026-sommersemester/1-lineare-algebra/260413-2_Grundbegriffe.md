@@ -334,6 +334,9 @@ Seien $\overline{\underline{X}}, \overline{\underline{Y}}$ zwei Mengen.
 Eine Abbildung $f$ von $\overline{\underline{X}}$ nach $\overline{\underline{Y}}$, $f: \overline{\underline{X}} \to \overline{\underline{Y}}$, ist eine Vorschrift, die jedem $x \in \overline{\underline{X}}$ genau ein Element $y = f(x) \in \overline{\underline{Y}}$ zuordnet.   
 Für die Zuordnung einzelner Elemente schreiben wir auch $x \longmapsto y$
 
+> Wichtig: Abbildung bilden immer von einer Menge in eine andere ab. Wir nennen diese Mengen **Definitionsmenge** und **Wertemengen** 
+
+
 > Hinweis:  
 > Mengen: &emsp; $ \longrightarrow $  
 > Elemente: &emsp; $ \longmapsto $
@@ -404,3 +407,44 @@ Bleibt die Bijektivität von $f^{-1}: \overline{\underline{Y}} \to \overline{\un
 
 Es seien $y_1 \not= y_2 \in \overline{\underline{Y}}$. Dann gibt es $x_1,x_2 \in \overline{\underline{X}}$ mit $f(x_1) = y_1$, $f(x_2) = y_2$ und $x_1 \not= x_2$, da $f$ eine Abbildung ist. Also folgt $x_1 = f^{-1}(y_1) \not= f^{-1}(y_2) = x_2$ woraus sich die Injektivität ergibt.  
 Ferner sei $x \in \overline{\underline{X}}$, woraus $x=f^{-1}(f(x))$ mit $f(x) \in \overline{\underline{Y}}$ folgt, woraus Surjektivität folgt.
+
+**Beispiel:**
+
+$\overline{\underline{X}} = [0,  \frac{\pi}{2}] \subseteq \mathbb{R}$  
+$\overline{\underline{Y}} = [0,1] \subseteq \mathbb{R}$  
+$\overline{\underline{Z}} = [1-,0] \subseteq \mathbb{R}$  
+
+$f: \overline{\underline{X}} \to \overline{\underline{Y}}$  
+$f(x) = sin(x)$  
+
+<img src="./bilder/intervall-sin-bijektiv.png" width="240">
+
+$g: \overline{\underline{Y}} \to \overline{\underline{Z}}$  
+$g(y) = -y$  
+
+<img src="./bilder/intervall-y--y-bijektiv.png" width="240">
+
+$g \circ f: \overline{\underline{X}} \to \overline{\underline{Z}}$  
+$g(f(x)) = -sin(x)$  
+
+$f$ und $g$ sind für den definierten Wertebereich bijektiv und hab daher Umkehrabbildungen.
+
+$f^{-1}: \overline{\underline{Y}} \to \overline{\underline{X}}$  
+$f^{-1}(x) = arcsin(x)$  
+
+
+$g^{-1}: \overline{\underline{Z}} \to \overline{\underline{Y}}$  
+$g^{-1}(y) = -y$
+
+
+### Definition: Einschränkung
+
+Seien $\overline{\underline{X}}, \overline{\underline{Y}}$ Mengen und $A \subseteq \overline{\underline{X}}, f: \overline{\underline{X}} \to \overline{\underline{Y}}$.  
+Dann heißt $f|_A: A \to \overline{\underline{Y}}, a \mapsto f(a), a \in A$ die **Einschränkung** von $f$ auf $A$.
+
+**Beispiel:**
+
+$\overline{\underline{X}} = \overline{\underline{Y}} = \mathbb{R}, A = [0,  \frac{\pi}{2}]$  
+$f: \overline{\underline{X}} \to \overline{\underline{Y}}, f(x) = sin(x)$  
+$f$ ist **nicht** injektiv auf $\overline{\underline{X}} = \mathbb{R}$,  
+**aber** $f|_A$ ist injektiv! (Man spricht: "f eingeschränkt auf A")

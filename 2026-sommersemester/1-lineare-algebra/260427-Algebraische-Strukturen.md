@@ -95,3 +95,102 @@ Ein Element $1 \in R$ heißt Einselement, wenn $1 \cdot a = a \cdot 1 = a$ für 
 Ein kommutativer Ring mit Einselement heißt **kommutativer Ring mit Eins**.
 
 Zu $a \in R$ wird das inverse Element bzgl. der Addition mit $-a$ bezeichnet.
+
+
+### Lemma
+
+Sei $(R, +, \cdot)$ ein Ring mit Nullelement $0$.  
+Dann gilt $a \cdot 0 = 0$ für alle $a \in R$
+
+
+### Beweis
+
+Es gilt $a \cdot 0 \overset{(R1)}= a \cdot (0+0) \overset{(R3)} = a \cdot 0 + a \cdot 0$  
+Addition von $-a \cdot 0$ auf beiden Seiten:
+
+```math
+\begin{aligned}
+a \cdot 0 + (-a \cdot 0) &= a \cdot 0 + a \cdot 0 + (-a \cdot 0) \\
+\overset{\text{(R3) und (R1)}} \Leftrightarrow (a + (-a)) \cdot 0 &= a \cdot \underbrace{0 + (a + (-a)) \cdot 0}_{= â} \\
+\Leftrightarrow â &= \underbrace{a \cdot 0}_{=e} + â
+\end{aligned}
+```
+
+Aus der letzten Zeile folgt durch (R1): Wenn ein Element mit dem neutralen Element addiert wird, erhalten wir das Element. Demnach ist $a \cdot 0$ ein neutrales Element und somit $0$.
+
+**Bemerkung:**
+
+Wir können auch feststellen, dass in einem **kommutativen Ring** mit Einselement 1 tatsächlich $(-1) \cdot a$ das inverse Element zu $a$ bezüglich der Addition ist.  
+Es gilt also:
+
+```math
+\begin{aligned}
+(-1) \cdot a &= -a = a \cdot (-1) \\
+\text{denn:} \quad a + (-1) \cdot a &= (1 + (-1)) \cdot a
+ = 0 \cdot a = 0
+\end{aligned}
+```
+
+### Satz
+$(R,+,\cdot)$ Ring mit Einselement $1$ und Nullelement $0$ und $R$ enthalte mehr als ein Element. Dann gilt $1 \not = 0$.
+
+### Beweis
+Wir beweisen durch Widerspruch:  
+Es sei also $1 = 0$  
+Dann folgt:
+
+```math
+\begin{aligned}
+a \cdot 1 &= a \cdot 0 \quad \forall a \in R \\
+\Rightarrow a & = 0 \quad \forall a \in R \\
+\Rightarrow R &= \set{0} \\
+\end{aligned} \\
+\text{Widerspruch zu "R enthalte mehr als ein Element"}
+```
+
+## Definition: Körper
+
+Ein kommutativer Ring $(R,+,\cdot)$ mit Einselement heißt Körper, wenn es zu jedem $r \in R \setminus \set{0}$ ein inverses Element $r^{-1}$ bezüglich der Multiplikation gibt. ($r^{-1} \cdot r = 1)$  
+Ferner bezeichnen wir das zu $r$ inverse Element bezüglich der Multiplikation mit $\frac{1}{r} := r^{-1}$.
+
+**Bemerkung:**
+
+Warum fordern wir nicht für $0$ die Existenz eines multiplikativen inversen Elements?  
+Falls $\frac{1}{0}$ existieren würde, müsste es invers zu $0$ sein. Es müsste also $\frac{1}{0} \cdot 0 = 1$ gelten.  
+Da aber für alle Körperelement $r$ die Gleichung $r \cdot 0 = 0$ gilt, kann es kein Körperelement geben, das invers zu $0$ ist.
+
+### Satz
+Jeder Körper $(K,+,\cdot)$ ist **nullteilerfrei**, das heißt $a \cdot b = 0 \Rightarrow (a=0) \lor (b=0) \quad \forall a,b \in K$
+
+### Beweis
+$a \cdot b = 0$ und ohne Beschärnkung der Allgemeinheit (o. B. d. A.) sei $b \not= 0$.
+Wir multiplizieren beide Seiten von rechts mit $\frac{1}{b}$, was nach Annahme existiert (da $b \not = 0$) und erhalten:
+```math
+\begin{aligned}
+a \cdot \underbrace{b \cdot \frac{1}{b}}_{= 1} &= \underbrace{0 \cdot \frac{1}{b}}_{=0} \\
+\underbrace{a \cdot 1}_{= a} &= 0 \\
+a &= 0 \\
+\end{aligned}
+```
+
+<img src="./bilder/gruppen-schema.png" width="600">
+
+### Beispiel. Komplexe Zahlen
+
+$\mathbb{C} = \set{a + ib: a,b \in \R}$, wobei $i = \sqrt{-1}$, die imaginäre Einheit ist.
+
+Operation:
+
+$+$: $z_1 + z_2 = (a_1 +ib_1) + (a_2 + ib_2) = \overbrace{(a_1 + a_2)}^{a} + i\cdot \overbrace{(b_1 + b_2)}^{b}$  
+$\cdot$: $z_1 \cdot z_2 = (a_1 +ib_1) \cdot (a_2 + ib_2) = \underbrace{(a_1 a_2 - b_1 b_2)}_{a} + i\cdot \underbrace{(a_1 b_2 + b_1 a_2)}_{b}$  
+
+> Hinweis:
+> Das erklärte "+" und "$\cdot$" bezieht sich auf die Verknüpfungen aus $(\mathbb{C}, +, \cdot)$. Das "+" und "\cdot" im rechten Teil, bezieht sich auf die bekannten Operation für den Körper der reellen Zahlen mit dem bekannten Addieren und Multiplizieren.
+
+Für $z  = a + ib$ heißt $a$ Realteil und $b$ Imaginärteil von $z$.
+
+| Element | Schreibweise | Schreibweise für $\mathbb{C} = \set{\R \times \R}$ |
+| - | - | - |
+| Nullelemet | $0 = 0 + i0$ | $(\underbrace{0}_{\text{Realteil}}, \overbrace{0}^{\text{Imaginärteil}})$ |
+| Einselement | $1 = 1 + i0$ | $(1,0)$ |
+| imaginäre Einheit | $i = 0 +i1$ | $(0,1)$ |

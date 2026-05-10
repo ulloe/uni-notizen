@@ -51,7 +51,7 @@ $a \circ e \overset{(G3)}= a \circ (a^{-1} \circ a) \overset{(G1)}= (a \circ a^{
 
 **Eindeutigkeit des inversen Elements**
 
-Seien $a'$ und $a^{-1}$ beides inverse zu a.  
+Seien $a'$ und $a^{-1}$ beides inverse zu $e$.  
 Dann gilt:
 
 $a' = a' \circ e = a' \circ (a \circ a^{-1}) \overset{(G1)} = (a' \circ a) \circ a^{-1} \overset{(G3)} = e \circ a^{-1} \overset{(G2)}= a^{-1}$
@@ -175,7 +175,7 @@ a &= 0 \\
 
 <img src="./bilder/gruppen-schema.png" width="600">
 
-### Beispiel. Komplexe Zahlen
+### Beispiel: Komplexe Zahlen
 
 $\mathbb{C} = \set{a + ib: a,b \in \R}$, wobei $i = \sqrt{-1}$, die imaginäre Einheit ist.
 
@@ -194,3 +194,78 @@ Für $z  = a + ib$ heißt $a$ Realteil und $b$ Imaginärteil von $z$.
 | Nullelemet | $0 = 0 + i0$ | $(\underbrace{0}_{\text{Realteil}}, \overbrace{0}^{\text{Imaginärteil}})$ |
 | Einselement | $1 = 1 + i0$ | $(1,0)$ |
 | imaginäre Einheit | $i = 0 +i1$ | $(0,1)$ |
+
+#### $(\mathbb{C}, +, \cdot)$ Körper
+
+**1) $(\mathbb{C}, +)$ Abelsche Gruppe**
+
+* Nullelement $0 + i0$ oder $(0, 0)$
+* inverse Element
+* Assoziativität
+* Kommutativität
+
+**2) $(\mathbb{C} \setminus \set{0}, \cdot)$ Abelsche Gruppe**
+
+* Einselement $1 + i0$ oder $(1, 0)$
+* inverse Element
+* Assoziativität
+* Kommutativität
+
+**3) Distributivität**
+
+**4) inverse Element zu " $\cdot$ "**
+
+
+#### Extras
+
+**Polarkoordinatendarstellung**
+
+$z = re^{i\varphi} = r(\cos \varphi + i \sin \varphi) = \underbrace{r \cos \varphi}_{a} + \underbrace{i \sin \varphi}_{b}$  
+$\mathbb{C} = \set{ z = re^{i\varphi}, \begin{array}{l} r \in \mathbb{R}^+_0 \\ \varphi \in \left[0, 2 \pi \right] \end{array}}$
+
+Konjugiert komplexe Zahl zu $z = a +ib: \bar z = a - ib$  
+Inverses Element bzgl. der Multiplikation, $z \not= 0, z \in \mathbb{C}$
+
+$\frac{1}{z} = \frac{1}{a+ib}   \left(\cdot \frac{a-ib}{a-ib}\right) = \frac{\bar z}{z \cdot \bar z } = \frac{a-ib}{a^2+ib^2} = \underbrace{\frac{a}{a^2+b^2}}_{\text{Realteil}} - i \underbrace{\frac{b}{a^2 + b^2}}_{\text{Imaginärteil}} \in \mathbb{C}$
+
+
+### Weitere Beispiele
+
+1) $(\mathbb{Q}, +, *)$ ist ein Körper
+2)  $(\mathbb{R}, +, *)$ ist ein Körper
+3)  $(\set{0,1}, +, *)$ ist ein Körper, genannt $\mathbb{F}_2$
+    * Addition entspricht der Rechnung "modulo 2"
+
+Mit der Addition:
+
+|**+**|**1**|**0**|
+|-|-|-|
+|**1**|0|1|
+|**0**|1|0|
+
+
+und der Multiplikation:
+
+
+|**$\cdot$**|**1**|**0**|
+|-|-|-|
+|**1**|1|0|
+|**0**|0|0|
+
+> Bemerkung: Der Restklassenring $\mathbb{F}_p$ ist ein Körper, wenn $p$ eine Primzahl ist.
+
+**Weiteres Beispiel**
+
+4) $V = \set{v = a + \sqrt{2}b | a,b \in \mathbb{Q}}$
+
+$+$: $v_1 + v_2 = (a_1 + a_2) + \sqrt{2}(b_1+b_2)$  
+$\cdot$: $v_1 \cdot v_2 = (a_1 \cdot a_2 + 2b_1 \cdot b_2) + \sqrt{2}(a_1 b_2+a_2 b_1)$
+
+$(V, +, \cdot)$ Körper oder **nur** ein Ring?
+
+Inverses bzgl. Multiplikation:  
+$\frac{1}{v} = \frac{1}{a+\sqrt{2}b} = \frac{a-\sqrt{2}b}{a^2-2b^2} = \underbrace{\frac{a}{a^2-2b^2}}_{\in \mathbb{Q}} + \sqrt{2} \underbrace{(\frac{-b}{a^2}-2b^2)}_{\in \mathbb{Q}}$  
+$v \not= 0$  
+$a^2-2b^2 \not= 0$, da $\sqrt{2} \notin \mathbb{Q}$
+
+$\Rightarrow \frac{1}{v} \in V \Rightarrow (V, +, \cdot)$ ist ein Körper.

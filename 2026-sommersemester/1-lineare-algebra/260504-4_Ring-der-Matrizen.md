@@ -322,3 +322,117 @@ $\underbrace{P_2 \cdot A}_{\text{von rechts multipliziert}} = \left[\begin{matri
 
 
 $\underbrace{A \cdot P_2}_{\text{von link multipliziert}} = \left[\begin{matrix}a_{11} & a_{12} \\ a_{21} & a_{22} \end{matrix}\right] \left[\begin{matrix}0 & 1 \\ 1 & 0 \end{matrix}\right] = \left[\begin{matrix}a_{12} & a_{11} \\ a_{22} & a_{21} \end{matrix}\right]$ (Spaltenpermutation)
+
+
+#### Lemma
+
+a) Die Matrizen $K^{n \times n}$ bilden einen (**nicht-kommutativen**) Ring mit 1.  
+b) Die Menge der invertierbaren Diagonalmatrizen bilden eine kommutative multiplikative Gruppe
+
+> Achtung! Bezgüglich der Addition ist die Menge der invertierbaren Diagonalmatrizen **nicht** abgeschlossen (sonst wäre sie ein Körper).  
+> Beispiel: $\left[\begin{matrix}1 & 0 \\ 0 & 2\end{matrix}\right] + \left[\begin{matrix}1 & 0 \\ 0 & -2\end{matrix}\right] = \left[\begin{matrix}2 & 0 \\ 0 & 0\end{matrix}\right]$  
+> Das Ergebnis ist nicht invertierbar!
+
+c) Die Menge der Permutationsmatrizen in $K^{n \times n}$ bidlet eine multiplikative Gruppe.
+
+#### Beweis
+a) *TODO (simples Nachrechnen)*  
+b) *TODO (simples Nachrechnen)*  
+c) Seien $A = [a_{ij}]_{ij}, B = [b_{ij}]_{ij} \in K^{n \times n}$ Permutationsmatrizen und sei $C = A \cdot B = [c_{ij}]_{ij}$ mit $[c_{ij}]_{ij} = \sum\limits_{k=1}^n a_{ik} b_{kj} = (a_{i1}, ..., a_{in}) \left(\begin{matrix}b1j \\ \vdots \\ b_{nj}\end{matrix}\right)$
+
+In der i-ten Zeile von $A$ gibt es **genau ein** $a_{ik} = 1$. Dazu passend gibt es **genau eine** Spalte in $B$, in der $b_{kj} = 1$, somti gibt es in jeder Zeile von $C$ genau einen 1-Eintrag. Alle anderen Einträge sind 0. Analoges gilt für jede Spalte von $C$.
+
+Für $C = A \dot A^T$ gilt $(A^T = [a'_{ij}]_{ij})$
+$c_{ij} = \sum\limits_{k=1}^n a_{ik} \underbrace{a'_{kj}}_{=a_{jk} = \begin{cases} \text{1 } i = j \\ \text{0 } i \not = j \end{cases}} = \delta_{ij}$
+
+($A^{-1} = A^T$)
+
+#### Lemma
+
+Die Menge der invertierbaren oberen Dreiecksmatrizen in $K^{n \times n}$ ist eine (**nicht-kommutative**) multiplikative Gruppe. (Analoges gilt für untere Dreiecksmatrizen.)
+
+#### Beweis
+
+Seien $A = [a_{ij}]_{ij}$ und $B = [b_{ij}]_{ij}$ invertierbare obere Dreiecksmatrizen in $K^{n \times n}$.
+Sei $C = A \cdot B = [c_{ij}]_{ij}$.
+
+Für $i > j$ gilt:
+
+$c_{ij} = \sum\limits_{k=1}^n a_{ik} b_{kj} = \sum\limits_{k=1}^j a_{ik} b_{kj} + = \sum\limits_{k=j+1}^n a_{ik} b_{kj} = 0$
+
+$k \leq j \leq i \Rightarrow a_{ik} = 0$ und $k > j \Rightarrow b_{kj} = 0$
+
+Da A und B als invertierbar vorausgesetzt sind, ist das Produkt $ C = AB$ nicht nur eine obere Dreiecksmatrix, sondern auch invertierbar.  
+Assoziativität $\checkmark$, Existenz der 1 ($I$) $\checkmark$.  
+Es bleibt zu zeigen, dass $A^{-1}$ eine obere Dreiecksmatrix ist. Die Existenz ist nach Voraussetzung gegeben.  
+Wir suchen $C = [c_{ij}]_{ij}$, sodass $A \cdot C = I$
+
+Das bedeutet:
+
+$\left[\begin{matrix} a_{11} & \dots & \dots & a_{1n} \\  & a_{22} & \dots & \vdots \\ & & \ddots & \vdots  \\ 0 & & &  a_{mn}\end{matrix}\right] \left[\begin{matrix} & | \\ & | \\ & | \\ & | & & & \end{matrix}\right] = \left[\begin{matrix} 1 & 0 & \dots & 0 \\ 0 & 1 & \dots & \vdots \\ \vdots & \vdots  & \diagdown & \vdots  \\ 0 & 0 & \dots & 1\end{matrix}\right]$
+
+Für jede Spalte von C gilt:
+
+$\left[\begin{matrix} a_{11}  & \dots & a_{1n} \\ & \ddots & \vdots  \\ 0 & &  a_{mn}\end{matrix}\right] \underset{\text{j-te Spalte von }C}{\left[\begin{matrix} c_{ij} \\ \vdots \\ c_{nj} \end{matrix}\right]} = \underset{\text{j-te Spalte von }I}{\left[\begin{matrix}  0 \\ \vdots \\ \underset{\text{j-te Zeile}}{1} \\ \vdots \\ 0\end{matrix}\right]}$
+
+$\delta_{ij} = \begin{cases} 1 \quad i = j \\ 0 \quad \text{sonst} \end{cases}$
+
+$a_{nn} \cdot c_{nj} = \delta_{nj} \Rightarrow c_{nj} = \frac{\delta_{nj}}{a_{nn}}$
+
+
+$a_{n-1,n-1} \cdot c_{n-1,j} + a_{n-1,n} \cdot \underbrace{c_{nj}}_{= \frac{\delta_{nj}}{a_{nn}}} = \delta_{n-1,j}$  
+$\Rightarrow c_{n-1,j} = \frac{1}{a_{n-1,n-1}}(\delta_{n-1,j} - a_{n-1,n}) \underbrace{c_{nj}}_{= \frac{\delta_{nj}}{a_{nn}}}$
+
+... und so weiter
+
+
+Insgesamt ergibt sich daraus dei Formel für die Inverse (durch sogenanntes Rückwärtseinsetzen):  
+Für $j=1,\dots,n$ gilt:
+
+$c_{nj} = \frac{\delta_{nj}}{a_{nn}}$
+
+$\color{red}c_{ij} = \frac{1}{a_{nn}}(\delta_{ij} - \sum\limits_{k=i+1}^n a_{ik} c_{kj}) \color{text}\quad \text{mit } i = n-1, \dots, 1$
+
+Aus der Existenz von $A^{-1}$ folgt außerdem $a_{ii} \not = 0$ für alle $i$.
+
+Nun müssen wir zeigen, dass $C$ eine obere Dreiecksmatrix ist ($c_{sj} = 0$ für $s > j, j < n$).
+
+**Induktionsanfang**  
+Sei $s=n$. Dann gilt $c_{sj} = c_{nj} = \frac{\delta_{nj}}{a_{nn}} \overset{j < n}= 0.$
+
+**Induktionsvoraussetzung**  
+Es seien $c_{nj} = \dots = c_{sj} = 0$ mit $s > j + 1$
+
+**Induktionsschritt**  
+ Wir betrachten $c_{s-1,j}$ und erhalten:  
+
+$c_{s-1,j} = \frac{1}{a_{s-1,s-1}}(\underbrace{\delta_{s-1,j}}_{= 0\text{ , da } s-1 \not = j} - \sum\limits_{k=s}^n a_{s-1,k} \underbrace{c_{kj}}_{= 0 \text{ nach IV}})$
+
+
+**Beispiel**
+
+a) $A = \left[\begin{matrix}1 & 2 & 0 \\ 0 & 1 & 2 \\ 0 & 0 & 1\end{matrix}\right]$
+
+$n = 3$  
+$c_{31} = 0$  
+$c_{21} = 0$  
+$c_{11} = \frac{1}{a_{11}}(\delta_{11} - a_{12}c_{21} - a_{13}c_{31}) = \frac{1}{1}(1 - 0 - 0) = 1$
+
+
+$c_{32} = 0$  
+$c_{22} = \frac{1}{a_{22}}(\delta_{22} - a_{23}c_{32}) = \frac{1}{1}(1 - 0) = 1$  
+$c_{12} = \frac{1}{a_{11}}(\delta_{12} - a_{12}c_{22} - a_{13}c{32}) = \frac{1}{1}(0 - 2 - 0) = -2$
+
+$c_{33} = \frac{1}{a_{33}}(\delta_{33} - 0) = \frac{1}{1}(1 - 0) = 1$  
+$c_{23} = \frac{1}{a_{22}}(\delta_{23} - a_{23}c_{33}) = \frac{1}{1}(0 - 2) = -2$  
+$c_{13} = \frac{1}{a_{11}}(\delta_{13} - a_{12}c_{23} - a_{13}c{33}) = \frac{1}{1}(0 +4 - 0) = 4$
+
+$\Rightarrow C = \left[\begin{matrix}1 & -2 & 4 \\ 0 & 1 & -2 \\ 0 & 0 & 1\end{matrix}\right]$
+
+b) Für Blockmatrizen $A = \left[\begin{matrix}A_{11} & A_{12} \\ A_{21} & A_{22} \end{matrix}\right]$ in oberer Dreiecksform mit invertierbaren Matrizen $A_{11}, A_{22}$ ist die Inverse gegeben:
+
+$A^{-1} = \left[\begin{matrix}A_{11}^{-1} & -A_{11}^{-1}\cdot A_{12} \cdot A_{22}^{-1} \\ 0 & A_{22}^{-1}\end{matrix}\right]$
+
+**Beweis**
+
+> Todo! Tipp: Siehe Übung am 12.05.2026

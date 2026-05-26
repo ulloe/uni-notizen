@@ -52,3 +52,43 @@ $\bar x_1 \bar x_2 + x_1 x_2$
 
 ### Definition (3.2.1)
 Eine einzelne Variable oder negierte Variable in einem Booleschen Ausdruck wird **Literal** genannt.
+
+$M(b)$ wird als der zu $b$ gehörende **Minterm** bezeichnet, wobei $b = (b_1, ..., b_n) \in \set{0, 1}^n$
+
+**Beispiel**
+
+$M(1, 0, 1, 0, 1) = x_1 \bar x_2 x_3 \bar x_4 x_5$
+
+Aus vorherigem Beispiel:  
+$\bar x_1 \bar x_2 + x_1 x_2$
+
+Dann sind die Minterme $M(0,0)$ und $M(1,1)$.
+
+Sei $f$ eine $n$-stellige Boolesche Funktion und $b^1, ... , b^t$ ihre Parametervektoren für die $f(b) = 1$ gilt.  
+Dann gilt für $f = M(b^{(1)}) + ... + M(b^{(t)})$
+
+Man nennt das die **Disjunktive Normalform**.
+
+### DNF
+
+Disjunktive Normalform ist die Boolesche Summe von Booleschen Produkten von Literalten, zum Beispiel: $(\bar x_1 \bar x_2) + (x_1 x_2)$
+
+### KNF
+
+Konjunktive Normalform ist das Boolesche Produkt von Booleschen Summen von Literalen, zum Beispiel: $(x_1  + \bar x_2) (\bar x_1 + x_2)$
+
+
+### Satz
+
+Für jede Boolesche Funktion $f$ gibt es einen Booleschen Ausdruck $w$ in disjunktiver Normalform der repräsentiert wird durch $f_w = w$.  
+Für jede Boolesche Funktion $f$ gibt es einen Booleschen Ausdruck $v$ in konjunktiver Normalform der repräsentiert wird durch $f_v = v$.
+
+> Hinweis:  
+> Wichtige Anwendung: Minimierung von Booleschen Ausdrücken
+
+
+Jede Boolesche Funktion ist durch $\set{\lnot, +, \cdot}$ repräsentiertbar, d. h. das System $\set{\lnot, +, \cdot}$ ist **funktional vollständig**.
+
+*  $\set{\lnot, +}$ ist ebenfalls funktional vollständig, da $x_1 x_2 = \overline{\bar x_1 + \bar x_2}$
+*  $\set{\lnot, \cdot}$ ist ebenfalls funktional vollständig, da $x_1  + x_2 = \overline{\bar x_1  \bar x_2}$
+*  $\set{\cdot, +}$ ist **nicht** funktional vollständig, da die Negation nicht abgebildet werden kann.

@@ -91,3 +91,90 @@ $\exists x(q(x))$
 Existenzaussagen sind oft konstruktiv beweisbar. Wir müssen nur für ein x zeigen, dass die Aussage wahr ist.  
 
 Beispiel 2.4.2 als Konstruktionsschritt
+
+
+## 2.4 Schubfachprinzip (von Dirichlet)
+
+Falls man $n$ Gegenstände auf $k$ Fächer verteilt mit $n > k > 0$, dann muss es mindestens ein Fach geben, mit mehr als einem Gegenstand.  
+*Widerspruchsbeweis:*  
+Gäbe es höcshtens ein Gegenstand pro Fach, gäbe es höchstens $n = k$ Gegensände. Widerspruch zu $n > k$ !
+
+### Lemma
+
+Werden $n > k$ Gegensände auf $k$ Fächer verteilt, so gibt es ein Fach, das mindestens $\lceil \frac{n}{k} \rceil$ Gegenstände enthält.
+
+### Beweis
+
+Gegenteilige Annahme: Ein Fach hat maximal  $\lceil \frac{n}{k} \rceil -1$ Gegenstände.
+
+$k \cdot (\lceil \frac{n}{k} \rceil -1) < k \cdot ((\lceil \frac{n}{k} \rceil -1) +1) = n$
+
+Das ist ein Widerspruch zu $n > k$
+
+> Hinweis:  
+> $\lceil \frac{n}{k} \rceil - \frac{n}{k} < 1$
+
+
+### 2.5 Induktionsbeweise
+
+**Begriffe:**
+
+**Induktion:** Auflisten in Reihe $\mathbb{N}_0 = \set{0,1,2,3,...}$
+
+**Rekursion:** Beziehen auf NMachfolger von elementarer Zahl $0$
+
+**iteration:** Durchlaufen aller Elemente
+
+* $p$ sei ein Prädikat mit einer Variable aus dem Universum $\mathbb{N}_0$
+* Betrachte Menge $X$ aller Zahlen für die $p(n)$ wahr ist.
+
+$X = \set{n \in \mathbb{N}_0 | p(n)}$
+
+$p(0)$ und stets $p(n) \to p(n+1)$, dann $p(n)$ für alle $n \in \mathbb{N}_0$ $\forall n \in \mathbb{N}_0 \quad p(n)$
+
+Zu zeigen: $p(0) \land \forall n \in \mathbb{N}_0 \quad p(n) \to p(n+1)$
+
+1) Nachweis der Gültigkeit von $p(0)$ (**Induktionsanfang (IA)**)
+2) Zeige $p(n) \to p(n+1)$ (**Induktionsschritt (IS)**)
+3) $p(n) ist wahr.  (**Induktionsvoraussetzung (IV)**)
+
+Unter Annahme von $p(n)$ kann $p(n+1)$ gezegit werden.
+
+Schematischer Aufbau eines Beweises von ∀n ∈ N0 p(n) mit Induktion:
+1. **IA**: Für den Fall $n = 0$ gilt ...(+).
+2. $n$ sei im folgenden beliebig aus $\mathbb{N}_0$ .
+3. **IV**: Wir nehmen an, dass $p(n)$ (*) gilt.
+4. **IB**: Zu zeigen ist daher $p(n + 1)$ (**).
+5. Die IB gilt, da ... (++).
+6. Da $n$ beliebig gewählt war, gilt nach dem Induktionsprinzip damit $\forall n \in \mathbb{N}_0 \quad p(n)$.
+
+
+Empfehlung: Schema genau(!) übernehmen, d.h. erst (+) ausfüllen, dann (*) und (**) ausformulieren(!), schließlich (++) ausfüllen.
+
+#### Beispiel
+
+```math
+\begin{aligned}
+&1 & = 1^2 \\
+&1 + 3 & = 2^2 \\
+&1 + 3 + 5 & = 3^2
+\end{aligned}
+```
+
+Behauptung: $\sum\limits_{i = 1}^n (2i-1) = n^2$  
+
+**IA:**  
+$n = 0 \quad \sum\limits_{i = 1}^0 (2i-1)  = 0 = 0^2$  
+$n = 1 \quad \sum\limits_{i = 1}^1 (2i-1) = 1 = 1^2$  
+
+**IV:**  
+$\sum\limits_{i = 1}^n (2i-1) = n^2$ 
+
+**IS:**  
+$(n+1)^2 = \underbrace{n^2}_{\sum\limits_{i = 1}^n (2i-1)} +2n + 1$ 
+$ = (\sum\limits_{i = 1}^n (2i-1)) +2n +1$  
+$ = \sum\limits_{i = 1}^{n+1} (2i-1)$
+
+> Hinweis:  
+> $2n +1 = 2n + 2 -1 = 2(n+1)-1$
+

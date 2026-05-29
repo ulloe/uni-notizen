@@ -209,3 +209,35 @@ Wir bezeichnen mit $G_j: K^{n-j} \to K^{n \times n }, 1 \leq j \leq n$ die **Fro
 $G_j (l_1,...,l_{n-j}) = \left[\begin{matrix}1 \\ & 1 \\ & l_1 & 1 \\ & \vdots & & 1 \\ & l_{n-j} & & & 1 \end{matrix}\right]$
 
 Die j-te Spalte unterscheidet die Forbeniusmatrix von der Einheitsmatrix.
+
+#### Lemma
+- a) $A \in K^{n \times m}  
+Durch $P_{ij} \cdot A$ werden die Zeilen $i$ und $j$ in $A$ vertauscht. ($1 \leq i \leq j \leq n$)
+- b) Es gilt $P_{ij} = P_{ij}^T = P_{ij}^{-1}
+- c) Durch $G_j(l) \cdot A$ wird das $l_i$-fache der j-ten Zeile von $A$ zur Zeile ($j+i$) hinzuaddiert.
+- d) Für $l \in K^{n-j}$ gilt $(G_j(l))^{-1} = G_j(-l)$
+- e) Für $1 \leq k < i < j$ und die Definition $P_{ij}^k := P_{i-k,j-k} \in K^{(n-k) \times (n-k)}$ gilt $P_{ij} G_k(l) = G_k(P_{ij}^k l)P_{ij}$
+
+
+#### Beweis
+
+> Siehe Übung zum 26.05.2026
+
+### Algorithmus Gauß-Algorithmus in rekursiver Form
+
+**Eingabe:** $A, t$ und $\tilde m, \tilde n$ mit $A \in \mathbb{R}^{\tilde m \times \tilde n}$
+
+1. Setze $t \leftarrow t +1
+2. if $A = 0$ then
+3. &emsp; Setze $S_t = I_{\tilde m}$
+4. else
+5. &emsp; Finde die erste Spalte in $A$, die nicht komplett $0$ ist.
+6. &emsp; Diese Spalte erhält den Index $j_k$
+7. &emsp; Finde den ersten Spalteneintrag $i_t$, der ungleich $0$ ist
+8. &emsp; Vertausche die erste und die $i_t$-te Zeile von $A$
+9. &emsp; Annuliere alle Einträge in der ersten Spalte unterhalbn $a_{1j_k}$ Dann gilt:  
+ &emsp; $\tilde A = \underbrace{G_1 \left(\begin{matrix} \frac{-a_{2,j_t}}{a_{1,j_t}} \\ \vdots \\ \frac{-a_{m,j_t}}{a_{1,j_t}} \end{matrix}\right) \quad P_{1,i_t}}_{S_t} \cdot A = \left[\begin{array}{ccc}0 & 0 & a_{11} & * \\ 0 & 0 & 0 & \begin{array}{c} A_{neu} \end{array} \\ 0 & 0 & 0 & \end{array} \right] $
+10. &emsp; if $\tilde m > 1$ then
+11. &emsp; &emsp; Prüfe den Algorithmus auf ($A_{neu}, t, \tilde m - 1, \tilde n - j_t$)
+12. &emsp; endif
+13. endif

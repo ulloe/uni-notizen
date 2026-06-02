@@ -241,3 +241,108 @@ Durch $P_{ij} \cdot A$ werden die Zeilen $i$ und $j$ in $A$ vertauscht. ($1 \leq
 11. &emsp; &emsp; Prüfe den Algorithmus auf ($A_{neu}, t, \tilde m - 1, \tilde n - j_t$)
 12. &emsp; endif
 13. endif
+
+### Satz
+
+$K$ Körper, $A \in K^{m \times n}$  
+Dann gibt es ein $t \in \mathbb{N}$ und Elementarmatrizen $S_i, i = 1, ..., t$, so dass das Produkt $S_t \cdot ... \cdot S_1 \cdot A$ in Zeilenstufenform ist, das heißt:
+
+$\underbrace{S_t \cdot ... \cdot S_1}_{\tilde A} \cdot A = \underset{\underset{\text{n-Stufen}}{\tilde a_{ii} \not = 0}}{\overbrace{\left(\begin{matrix} \underline x & & & x\\ & |\underline x \\ & & |\underline x \\ 0 & & & |\underline x\end{matrix}\right)}^{\tilde A}}$
+
+Insbesondere ist $\tilde A$ eine obere Dreiecksmatrix, falls $n=m$ gilt und $A$ invertierbar ist.
+
+### Beweis
+
+$t = 0, \tilde m = m, \tilde n = n$ und rufen Gauß-Algorithmus auf.
+Die Matrizen $G^t$ und $P^t$ operieren in $K^{\tilde m \times \tilde n}$, wobei $\tilde m$ von Iteration zu Iteration um $1$ verkleinert wird. Sie lassen sich für $t > 0$ durch folgende Identifizierung, aber auch als Operationen auf ganz $K^{m \times n}$ auffassen.
+
+$G_t(l) = \left[\begin{array}{c|c} I_{t-1} & 0 \\ \hline 0 & G^t_1(l) \end{array}\right]$
+
+
+$P_{t,i_t+t-1} = \left[\begin{array}{c|c} I_{t-1} & 0 \\ \hline 0 & P^t_{1,i_t} \end{array}\right]$
+
+Ergebnis: $\underbrace{S_t \cdot ... \cdot S_1}_{\tilde A} \cdot A = \left(\begin{matrix} 0 & | \underline{x \quad} \\ 0 & & |\underline x \\ 0 & & & |\underline x \\ 0 & & & & |\underline x\end{matrix}\right)$
+
+wobei die x in den Spalten $j_\tau$ für $1 \leq \tau \leq t$ stehen. 
+Außerdem gilt ($S_\tau = G_\tau(l_\tau)) P_{\tau,i_\tau + \tau -1}$ für $1 \leq \tau \leq t$.
+
+Wenn $A$ invertierbar ist ($m = n$):
+
+
+$S_t \cdot ... \cdot S_1 \cdot A = \underset{\underset{\text{n-Stufen}}{\tilde a_{ii} \not = 0}}{\overbrace{\left(\begin{matrix} \underline x & & & x\\ & |\underline x \\ & & |\underline x \\ 0 & & & |\underline x\end{matrix}\right)}^{\tilde A}} \\ \quad \square$
+
+### Definition
+
+Die Position ($\tau , i_\tau$) des Gauß-Algorithmus heißen Pivotpositionen.
+
+Beispiel:
+
+```math
+\left.
+\begin{aligned}
+&
+\underset{\color{green}\text{1. Pivotposition}}{
+  \left[\begin{matrix}
+  0 &\color{green}2 &1 &3 \\
+  0 &2 &0 &1 \\
+  0 &2 &0 &2
+  \end{matrix}\right] 
+}
+\xrightarrow{\begin{aligned}\small{Z2 - Z1} \\ \small{Z3 - Z1} \end{aligned}}
+
+\left[\begin{array}{cccc}
+ 0 &2 &1 &3 \\
+ 0 &2 &\color{blue}-1 &\color{blue}-2 \\
+ 0 &2 &\color{blue}-1 &\color{blue}-1 
+\end{array}\right] \color{blue}A_{neu}\color{text}
+
+\\
+
+&
+\underset{\color{green}\text{2. Pivotposition}}{
+  \left[\begin{matrix}
+  \color{green}-1 & -2 \\
+  -1 & -1
+  \end{matrix}\right] 
+}
+\xrightarrow{\small{Z2 - Z1}}
+
+\left[\begin{array}{cc}
+ -1 & -2 \\
+ 0  &\color{blue}1 
+\end{array}\right] \color{blue}A_{neu}\color{text}
+
+\\
+
+&
+\left[\begin{array}{c}
+ \color{green}1
+\end{array}\right]
+
+\end{aligned}
+\right\}
+
+ \left[\begin{array}{cccc}
+ 0 &|\underline{\color{green}2} &1 &3 \\
+ 0 &0 &|\underline{\color{green}-1} &-2 \\
+ 0 &0 &0 &|\underline{\color{green}-1} 
+\end{array}\right] 
+```
+
+### Satz
+
+$A \in K^{n \times n}$ invertierbar.  
+Dann ergibt sich durch den Gauß-Algorithmus eine Zerlegung der Form $P \cdot A = L \cdot R$ mit Permutationsmatrixk $P$, invertierbare untere Dreiecksmatrix $L$, invertierbare obere Dreiecksmatrix $R$.
+
+## Beweis
+
+Nach obigen Satz: $S_t \cdot ... \cdot S_1 \cdot A = \tilde A$, $\tilde A$ Zeilenstufenform
+
+Da $GL_n(K)$ eine Gruppe ist und $S_\tau$ invertierbar sind, ist auch $\tilde A$ invertierbar.  
+Daher muss $\tilde a_{ii} \not = 0$ für alle $i=1, ...m n$ gelten.  
+Es sei $R = \tilde A$ und $S_t \cdot ... \cdot S_1 \cdot A = R$  
+> Wunsch: $S_t \cdot ... \cdot S_1 = G_t(l_\tau) \cdot P_{t,i_t + t-1} \cdot ... \cdot G_1(l_1) \cdot P_{1,i_1}$  
+
+$\color{green}\underbrace{G_t(\tilde l_\tau) \cdot ... \cdot G_1(\tilde l_1)}_{= \bar L} \color{text} \cdot \color{red}\underbrace{P_{t,i_t + t-1} \cdot ... \cdot P_{1,i_t}}_{= P}$
+
+wobei $\tilde l_\tau$ entspricht der Permutation von $l_\tau$

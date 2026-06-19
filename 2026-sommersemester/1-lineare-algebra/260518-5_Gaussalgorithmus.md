@@ -345,4 +345,69 @@ Es sei $R = \tilde A$ und $S_t \cdot ... \cdot S_1 \cdot A = R$
 
 $\color{green}\underbrace{G_t(\tilde l_\tau) \cdot ... \cdot G_1(\tilde l_1)}_{= \bar L} \color{text} \cdot \color{red}\underbrace{P_{t,i_t + t-1} \cdot ... \cdot P_{1,i_t}}_{= P}$
 
-wobei $\tilde l_\tau$ entspricht der Permutation von $l_\tau$
+wobei $\tilde l_\tau$ entspricht der Permutation von $l_\tau$ (siehe Lemma e) $P_{ij} G_k(l) = G_k(P_{ij}^k l)P_{ij}$).
+
+$=> \bar L \cdot P \cdot A = R$, wobei $P$ Permutationsmatrix, und $\bar L$ untere Dreiecksmatrix.  
+$\leadsto P \cdot A = L \cdot R, L = \bar L^{-1}$
+
+
+**Bemerkung:**
+
+a) $L = \bar L ^{-1} = G_1(\tilde l_1)^{-1} \cdots G_t(\tilde l_t)^{-1}$
+
+$= \left[\begin{array}{ccccc} 1 & 0 \\ - \tilde l_{1,1} & 1 \\ \vdots &  - \tilde l_{2,1} & \ddots \\ - \tilde l_{1,n-1} &  - \tilde l_{2,n-1} & & 1\\  \end{array}\right]$
+
+b) $A \in GL_n(K) mit Ax = b$
+
+Dann lässt sich die LR-zerlegung zur Lösung des LGS nutzen:
+
+1) Berechne $P \cdot b =: z$
+2) Berechne $L^-{-1} \cdot z =: y$
+3) Berechne $x = R^{-1}y \quad (=R^{-1} L^{-1} Pb)$
+
+Jeder der drei Schritte ist leicht durchführbar, da entweder nur Zeilen in $b$ permutiert werden (in 1)) oder mit Dreiecksmatrizen gelöst werden müssen (in 2) und 3)).
+
+c) Die Faktoren $L$ und $R$ lassen sich auf dem selben Speicherplatz wie $A$ abspeichern.
+
+$A = \left(\begin{matrix} x & x & x & x \\ x \\ x \\ x \end{matrix}\right) \longrightarrow  \underset{\text{Zusätzlich hat die Matrix L die Diagonale \underline{mit 1 besetzt}}}{\left(\begin{matrix}| \underline x & & & R \\ & | \underline x \\ & & | \underline x \\ L & & & | \underline x \end{matrix}\right)}$
+
+Die Permutationsmatrix $P$ wird durch ihre WIrkung auf den Indexvektor $(1, ..., n)$ abgespeichert.
+
+d) Praktisch wählt man als Pivotposition häufig die Betragsgrößten Einträge in jeder Spalte.
+
+Beispiel:
+
+```math
+
+\begin{aligned}
+
+  \begin{align}
+  -10^{-4}x + y = 1 \\
+  -10^{-4}x + y = 1
+  \end{align}
+&  \huge \longrightarrow 
+
+& \left(\begin{array}{cc|c} -10^{-4} & 1 & 1 \\  1 & 1 & 2\end{array}\right) \\
+
+& & \huge \downarrow\\
+
+& & \left(\begin{array}{cc|c} -10^{-4} & 1 & 1 \\  0 & 10^4 +1  & 10^4 +2 \end{array}\right) \\
+\end{aligned}
+```
+
+exakte Lösung: $x =  \frac{1}{1,0001}$ und $x =  \frac{1,0002}{1,0001}$
+
+Bei einer 3-Stellen Arithmetik:
+
+```math
+\begin{aligned}
+  & \begin{aligned}
+    1+10^4 \approx 10^4 \\
+    2+10^4 \approx 10^4
+  \end{aligned}
+  & \Rightarrow y=1 \\
+  & \Rightarrow -10^{-4}x +1 = 1 & \Rightarrow x = 0
+\end{aligned}
+```
+
+Dieser Effekt tritt nicht auf, wenn die Zeilen getauscht werden.

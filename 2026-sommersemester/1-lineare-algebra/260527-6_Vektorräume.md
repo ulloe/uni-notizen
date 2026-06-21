@@ -240,6 +240,124 @@ Sind $\set{v_1,...,v_n}$ und $\set{w_1,...,w_m}$ Basen eines Vektorraums $V$ üb
 
 1) **Lineare Unabhängigkeit**:  
 Sei $i \in \set{1,...,n}$ fest gewählt. Dann gitb es ein $j \in \set{1,...,m}$ mit $w_j \notin span(v_1,...,v_{i-1},v_{i+1},...,v_n)$.  
-Ansonsten wäre $V = span(w_1,...,w_m) \subseteq span(v_1,...,v_{i-1},v_{i+1},...,v_n)$ und damit wäre $v_i \in V$ linear abhängig von $\set{v_1,...,v_{i-1},v_{i+1},...,v_n}$.
-
+Ansonsten wäre $V = span(w_1,...,w_m) \subseteq span(v_1,...,v_{i-1},v_{i+1},...,v_n)$ und damit wäre $v_i \in V$ linear abhängig von $\set{v_1,...,v_{i-1},v_{i+1},...,v_n}$.  
 Für jedes $j$ ist also $\set{v_1,...,v_{i-1},v_{i+1},...,v_n}$ eine Menge unabhängiger Vektoren.
+2) **Erzeugendensystem**  
+Da $w_j \in V$ lässt es sich als Linearkombination $w_j = \sum\limits_{k=1}^n \lambda_k v_k$ mit $\lambda_i \not = 0$ darstellen, da sonst $w_j \in span(v_1,...,v_{i-1},v_{i+1},...,v_n)$ gelten würde. Daraus folgt:  
+$v_i  = \frac{1}{\lambda_i}(w_j - \sum\limits_{\underset{k\not = i}{k=1}}^n \lambda_k v_k)$
+
+Als lässt sich ein belibiges $v \in V$ darstellen als:
+
+```math 
+\begin{aligned}
+v & = \sum\limits_{k=1}^n \mu_k v_k \\
+& = \mu_i v_i + \sum\limits_{\underset{k\not = i}{k=1}}^n \mu_k v_k \\
+& = \mu_i \frac{1}{\lambda_i}(w_j - \sum\limits_{\underset{k\not = i}{k=1}}^n \lambda_k v_k) + \sum\limits_{\underset{k\not = i}{k=1}}^n \mu_k v_k \\
+& = \frac{\mu_i}{\lambda_i} w_j - \sum\limits_{\underset{k\not = i}{k=1}}^n  \frac{\mu_i}{\lambda_i} \lambda_k v_k + \sum\limits_{\underset{k\not = i}{k=1}}^n \lambda_k v_k \\
+& = \frac{\mu_i}{\lambda_i} w_j  + \sum\limits_{\underset{k\not = i}{k=1}}^n (\mu_k -  \frac{\mu_i}{\lambda_i} \lambda_k) v_k
+\end{aligned}
+```
+
+### Satz
+
+Jeder aus endlich vielen Vektoren erzeugte Vektorraum $V = span(v_1,...,v_n), n \in N$ besitzt eine Basis und je zwei basen des selben VR haben gleich viele Elemente.
+
+### Beweis
+
+1) Existenz einer Basis  
+Seien $v_1,..,v_n \in V$ so gewählt, dass $span(v_1,...,v_n) = V$.  
+Sei $\set{v_1,...,v_r}$ eine linear unabhängige Teilmenge von $\set{v_1,...,v_n}$, so folgt aus dem Basisergänzungssatz, dass es eine Basis gibt.
+2) Eindeutigkeit der Basislänge  
+Angenommen es gibt zwei Basen $\set{v_1,..,v_n}$ und $\set{w_{i_1},...,w_{i_m}}$ von $V$ mit (ohne Beschränkung der Allgemeinheit) $n \geq m$.  
+Dann können wir nach dem Basisaustauschsatz, die Vetkoren $v_1,...,v_m$ durch geeignete Vektoren $w_{i_1},...,w_{i_m}$ ersetzen und sowohl $\set{w_{i_1},...,w_{i_m},v_{m+1},...,v_n}$ als auch $\set{w_{i_1},...,w_{i_m}}$ bilden eine Basis.  
+Die Vektoren $w_{i_1},...,w_{i_m}$ müssen alle verschieden voneinander sein, daher gilt $\set{w_{i_1},...,w_{i_m}} = \set{w_1,...,w_m}$.  
+Also müsste beim Versucht $v_{m+1}$ durch einen Vetkor $\set{w_1,...,w_m}$ zu ersetzen, mindestens ein $w_j$ doppelt auftauchen, was der lin. Unabhängigkeit widerspricht. Damit muss $n \leq m$ sein, also folgt $n=m$ $\square$
+
+
+### Definition
+
+Falls ein K-Vektorraum $V$ eine endliche Basis $\set{v_1},...,v_n}$ besitzt, heißt die nach dem obigen Satz, eindeutig definierte Anzahl $n$ von Basiselementen, die **Dimension** von $V$. $(dimV = n)$.  
+Falls es keine endliche Basis gibt, heißt $V$ unendlich-dimensional ($dimV = \infin$).
+
+---
+
+$\underset{\underbrace{= K \times K \times K ...}_{\text{n-mal}}}{K^n} = \set{(\lambda_1,\lambda_2, ...,  \lambda_n): \lambda_i \in K, i = 1,...,n}$
+
+$K^{n \times 1} = \set{\left(\begin{matrix}\lambda_1 \\ \vdots \\ \lambda_n \end{matrix}\right): \lambda_i \in K, i = 1,...,n}$
+
+Bsiher haben wir die beiden Mengen unterschieden. Sie sind isomorph (d.h. sie lassen sich bijektiv durch eine lineare Abbildung aufeinander abbilden). In zukunft werden wir sie nicht mehr unterscheiden und schreiben $K^n$.  
+Damit haben wir nun gleichzeitig auch noch ein matrix-Vektor-Produkt für eine Matrix $A \in K^{m \times n}$ und einen Vetkor $b \in K^n$ definiertm durch $Av := A\left(\begin{matrix}v_1 \\ \vdots \\ v_n \end{matrix}\right)$ bzw. in Komponenten von $Av := w \in K^m$ definiert durch $w_i = \sum\limits_{j=1}^n a_{ij}v_j, i = 1,...,m$.
+
+**Beispiel** Basen
+
+* $K^n$ kanonische Basis $e_1,...,e_n$  
+$e_i = \left(\begin{matrix} 0 \\ \vdots \\ 1 \\ \vdots \\ 0 \end{matrix}\right)$ $1$ ist die $i$-te komponente.
+
+Die Basisvektoren sind gerade die Spalten der Einheitsmatrix.
+
+* Die Spalten einer invertierbaren Matrix bilden eine Basis.
+
+### Satz
+
+$\set{v^1,...,v^n} \subseteq K^n$ von Vektoren des $K^n$, ist egnau dann eine Basis des $K^n$, wenn die aus diesen Vektoren als Spalte gebildete matrix $A = \left[\begin{array}{c|c|c} v^1 & \cdots & v^n \end{array}\right] \in K^{n \times n}$ invertierbar ist.
+
+### Beweis
+
+Im $K^n$ gilt mit der Definition der Matrixmultiplikation und der Identifizierung des $K^n$ mit dem $K^{n \times 1}$, dass sich Linearkombinationen mit Skalaren $\lambda_1,...,\lambda_n$ schreiben lassen als:
+
+$\sum\limits_{k=1}^n \lambda_k v^k = A \lambda$ mit $\lambda = \left(\begin{matrix}\lambda_1 \\ \vdots \\ \lambda_n \end{matrix}\right) \in K^n$
+
+Somit ist die Aussage $\sum\limits_{k=1}^n \lambda_k v^k = 0$ äquivalent zu $A\lambda = 0$
+
+Jetzt zeigen wir beide Richtungen der Äquivalenz
+
+"$\Leftarrow$"
+
+Es gilt $A\lambda = 0 \Rightarrow \lambda = A^{-1} 0 = 0$  
+Somit folgt aus der Invertierbarkeit von $A$ die lin. Unabhängigkeit der Vetkoren in den Spalten von $A$.
+Sei $v \in K^n$ beliebig. Wir suchen $\lambda \in K^n$, so dass $v = \sum\limits_{k=1}^n \lambda_k v^k$.  
+Das ist äquivalent zu $v = A\lambda \Leftrightarrow A^{-1} v = \lambda$
+
+
+"$\Rightarrow$"
+
+Angenommen $A$ ist nicht invertierbar.  
+Eine Gauß-zerlegung $PA = LR$ liefer dann eine Zeilenstufenform mit einer oberen rechten Dreiecksmatrix $R$, bei der für mind. ein Diagonalelement $r_{ij} = 0$ gilt.  
+Sei $j$ der kleinste Index, so dass $r_{ij} = 0$ ist.  
+Wir definieren den Vetkor $\lambda = (\lambda_1,...,\lambda_n)^T$ durch:  
+
+$\lambda_i = \begin{cases} 0 &  \text{falls } i > j \\ 1 &  \text{falls } i = j  \\ -\frac{1}{r_{ij}} \sum\limits_{k=i+1}^j r_{ik} \lambda_k &  \text{falls } i = j-1,j-2,...1  \end{cases}$
+
+und erhalten dadurch ein $\lambda \not = 0$ mit $R\lambda = 0$.  
+Für dieses $\lambda$ gitl auch:
+
+$\sum\limits_{k=1}^n \lambda_k v^k = A\lambda = P^{-1}LR\lambda = 0$
+
+Damit sind die $v^1,...,v^k$ nicht linear unabhängig. Das ist ein Widerspruch zur Annahme.  
+$\square$
+
+### Definition (Basisdarstellung, Koordinaten, Koordinatenvekotren)
+
+Sei $\et{v_1,...,v_n}$ eine Basis des K_Vektorraums $V$, dann heißen für einen Vektor $v \in V$ die eindedutig bestimmten Skalare $\lambda_1,...,\lambda_n \in K$ die **Koordinaten** von $v$ und der Vektor $\left(\begin{matrix}\lambda_1 \\ \vdots \\ \lambda_n \end{matrix}\right)$ heißt **Koordinatenvektor** von $v$ oder auch **Basisdarstellung**.
+
+
+> Hinweis:
+```math
+\begin{aligned}
+
+& \underset{dimV = n}{v \in V} & \set{e_1,...,e_n} \quad & v = \sum\limits_{k=1}^n \lambda_k e_k &, \bar v = \left(\begin{matrix}\lambda_1 \\ \vdots \\ \lambda_n \end{matrix}\right) \in \mathbb{R}^n \\
+
+& & & \shortparallel \\
+
+& & \set{b_1,..,b_n} \quad & v =  \sum\limits_{k=1}^n \mu_k b_k & \tilde v = \left(\begin{matrix}\mu_1 \\ \vdots \\ \mu_n \end{matrix}\right) \in \mathbb{R}^n
+
+\end{aligned}
+```
+
+## 6.2 Unterraumsummen
+
+**Beispiel**:  
+
+$V = \mathbb{R}^3 = span(e_1,e_2,e_3), dimV = 3$  
+Betrachte zwei beliebig unabhängige Vekotren $u_1$ und $u_2 \in V$ und bidle $span(u_1, u_2)$. Dies ist dann eine (im Allgemeinen schiefliegende) Fläche im Raum, $span(u_1)$ ist eine Gerade.  
+Sowohl der $span(u_1, u_2)$ als auch der $span(u_1)$ verlaufen durch die $0$.

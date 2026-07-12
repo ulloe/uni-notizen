@@ -1,0 +1,21 @@
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Frobeniusmatrix"
+  antwort:
+    - "Eine Matrix, die bei der Gauß-Elimination zur Beschreibung einer Zeilenoperation entsteht"
+    - "Besitzt 1en auf der Hauptdiagonalen"
+    - "Besitzt zusätzliche Einträge nur in einer Spalte unterhalb der Diagonalen"
+    - "Die Einträge unterhalb der Diagonalen sind die Eliminationsfaktoren"
+
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Pivotposition"
+  antwort:
+    - "Eine Position eines führenden Elements in einer Zeile"
+    - "Pivotpositionen bestimmen die Stellen der Zeilenstufenform"
+    - "Jede Pivotposition liegt rechts von der Pivotposition der vorherigen Zeile"
+
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Pivotelement"
+  antwort:
+    - "Der Eintrag einer Matrix an einer Pivotposition"
+    - "Dient als führender Eintrag bei einem Gauß-Schritt"
+    - "Wird zur Eliminierung darunterliegender Einträge verwendet"

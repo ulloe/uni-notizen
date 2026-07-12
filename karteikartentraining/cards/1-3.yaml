@@ -1,0 +1,22 @@
+- thema: "Aussagenlogik"
+  frage: "Definition: Allquantor"
+  antwort:
+    - "Aussage ∀x ∈ M: A(x)"
+    - "Wahr genau dann, wenn A(x) für alle x ∈ M gilt"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Existenzquantor"
+  antwort:
+    - "Aussage ∃x ∈ M: A(x)"
+    - "Wahr genau dann, wenn mindestens ein x ∈ M existiert mit A(x)"
+
+- thema: "Mengen"
+  frage: "Definition: Menge"
+  antwort:
+    - "Zusammenfassung von wohlunterschiedenen Objekten"
+    - "Objekte heißen Elemente der Menge"
+
+- thema: "Mengen"
+  frage: "Definition: Element"
+  antwort:
+    - "x ∈ M bedeutet: x ist Element der Menge M"

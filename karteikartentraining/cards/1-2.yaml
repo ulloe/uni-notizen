@@ -1,0 +1,28 @@
+- thema: "Aussagenlogik"
+  frage: "Definition: Disjunktion"
+  antwort:
+    - "Aussage A ∨ B"
+    - "Wahr genau dann, wenn mindestens eine der Aussagen wahr ist"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Implikation"
+  antwort:
+    - "Aussage A → B"
+    - "Falsch genau dann, wenn A wahr und B falsch ist"
+    - "Sonst wahr"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Äquivalenz"
+  antwort:
+    - "Aussage A ↔ B"
+    - "Wahr genau dann, wenn A und B denselben Wahrheitswert haben"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Modus ponens"
+  antwort:
+    - "Aus A und A → B folgt B"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Modus tollens"
+  antwort:
+    - "Aus ¬B und A → B folgt ¬A"

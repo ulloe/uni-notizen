@@ -1,0 +1,19 @@
+- thema: "Matrizen"
+  frage: "Definition: Allgemeine lineare Gruppe GL_n(K)"
+  antwort:
+    - "Menge aller invertierbaren n×n-Matrizen über einem Körper K"
+    - "GL_n(K) = {A ∈ K^(n×n) | A ist invertierbar}"
+
+- thema: "Matrizen"
+  frage: "Definition: Transponierte Matrix"
+  antwort:
+    - "Für A=[a_ij] ist die transponierte Matrix A^T=[b_ij]"
+    - "Es gilt: b_ij = a_ji"
+    - "Zeilen und Spalten werden vertauscht"
+
+- thema: "Matrizen"
+  frage: "Definition: Konjugiert transponierte Matrix"
+  antwort:
+    - "Für eine komplexe Matrix A ist A* die konjugiert transponierte Matrix"
+    - "Es werden die Einträge konjugiert und anschließend transponiert"
+    - "b_ij = \u0305a_ji"

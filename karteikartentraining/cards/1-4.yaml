@@ -1,0 +1,21 @@
+- thema: "Mengen"
+  frage: "Definition: Teilmenge"
+  antwort:
+    - "A ⊆ B"
+    - "∀x: x ∈ A ⇒ x ∈ B"
+
+- thema: "Mengen"
+  frage: "Definition: Gleichheit von Mengen"
+  antwort:
+    - "A = B"
+    - "∀x: x ∈ A ⇔ x ∈ B"
+
+- thema: "Mengen"
+  frage: "Definition: Vereinigung"
+  antwort:
+    - "A ∪ B = {x | x ∈ A oder x ∈ B}"
+
+- thema: "Mengen"
+  frage: "Definition: Durchschnitt"
+  antwort:
+    - "A ∩ B = {x | x ∈ A und x ∈ B}"

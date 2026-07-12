@@ -1,0 +1,20 @@
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Ring"
+  antwort:
+    - "Eine Menge R mit zwei inneren Verknüpfungen + und ·"
+    - "(R,+) ist eine Abel'sche Gruppe"
+    - "Die Multiplikation ist assoziativ: (a·b)·c = a·(b·c)"
+    - "Es gelten die Distributivgesetze: a·(b+c)=a·b+a·c und (a+b)·c=a·c+b·c"
+
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Kommutativer Ring"
+  antwort:
+    - "Ein Ring R"
+    - "Die Multiplikation ist kommutativ: a·b = b·a für alle a,b ∈ R"
+
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Ring mit Einselement"
+  antwort:
+    - "Ein Ring R"
+    - "Es existiert ein Element 1 ∈ R"
+    - "Für alle a ∈ R gilt: 1·a = a·1 = a"

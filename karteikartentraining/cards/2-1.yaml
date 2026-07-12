@@ -1,0 +1,20 @@
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Verknüpfung"
+  antwort:
+    - "Eine Abbildung *: M × M → M"
+    - "Jedem geordneten Paar (a,b) ∈ M × M wird ein Element a*b ∈ M zugeordnet"
+    - "Innere Verknüpfung auf"
+
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Neutrales Element"
+  antwort:
+    - "Ein Element e ∈ M"
+    - "Für alle a ∈ M gilt: e*a = a*e = a"
+    - "Das Element e verändert andere Elemente bei der Verknüpfung nicht"
+
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Inverses Element"
+  antwort:
+    - "Zu a ∈ M existiert ein Element a⁻¹ ∈ M"
+    - "Es gilt: a*a⁻¹ = a⁻¹*a = e"
+    - "e ist das neutrale Element"

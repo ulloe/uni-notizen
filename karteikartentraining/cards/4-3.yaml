@@ -1,0 +1,20 @@
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Zeilenstufenform"
+  antwort:
+    - "Eine Matrix ist in Zeilenstufenform, wenn alle Nullzeilen unter den Nichtnullzeilen stehen"
+    - "Der erste von 0 verschiedene Eintrag jeder Zeile liegt rechts vom ersten von 0 verschiedenen Eintrag der vorherigen Zeile"
+    - "Alle Einträge unterhalb eines Pivotelements sind 0"
+
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Reduzierte Zeilenstufenform"
+  antwort:
+    - "Eine Matrix in Zeilenstufenform"
+    - "Jedes Pivotelement ist gleich 1"
+    - "In jeder Pivotspalte sind alle anderen Einträge 0"
+
+- thema: "Matrizen"
+  frage: "Definition: Dreiecksmatrix"
+  antwort:
+    - "Eine quadratische Matrix"
+    - "Obere Dreiecksmatrix: alle Einträge unterhalb der Hauptdiagonalen sind 0"
+    - "Untere Dreiecksmatrix: alle Einträge oberhalb der Hauptdiagonalen sind 0"

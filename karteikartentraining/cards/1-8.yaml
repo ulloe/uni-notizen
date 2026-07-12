@@ -1,0 +1,13 @@
+- thema: "Abbildungen"
+  frage: "Definition: Einschränkung einer Abbildung"
+  antwort:
+    - "Sei f: A → B und M ⊆ A"
+    - "Die Einschränkung f|_M: M → B ist definiert durch f|_M(x) = f(x)"
+    - "Definitionsmenge wird auf Teilmenge von A beschränkt"
+
+- thema: "Abbildungen"
+  frage: "Definition: Verkettung von Abbildungen"
+  antwort:
+    - "Seien f: A → B und g: B → C"
+    - "(g ∘ f): A → C"
+    - "(g ∘ f)(x) = g(f(x))"

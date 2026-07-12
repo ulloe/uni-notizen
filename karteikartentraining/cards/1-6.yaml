@@ -1,0 +1,24 @@
+- thema: "Abbildungen"
+  frage: "Definition: Abbildung"
+  antwort:
+    - "Eine Abbildung f: A → B ordnet jedem Element aus A genau ein Element aus B zu"
+    - "A heißt Definitionsmenge"
+    - "B heißt Zielmenge"
+
+- thema: "Abbildungen"
+  frage: "Definition: Bild einer Abbildung"
+  antwort:
+    - "Für M ⊆ A: f(M) = {f(x) | x ∈ M}"
+    - "Menge der Bilder aller Elemente aus M"
+
+- thema: "Abbildungen"
+  frage: "Definition: Urbild einer Abbildung"
+  antwort:
+    - "Für N ⊆ B: f⁻¹(N) = {x ∈ A | f(x) ∈ N}"
+    - "Menge aller Elemente aus A, die nach N abgebildet werden"
+
+- thema: "Abbildungen"
+  frage: "Definition: Identitätsabbildung"
+  antwort:
+    - "id_A: A → A"
+    - "id_A(x) = x für alle x ∈ A"

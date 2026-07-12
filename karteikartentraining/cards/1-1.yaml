@@ -1,0 +1,23 @@
+- thema: "Aussagenlogik"
+  frage: "Definition: Aussage"
+  antwort:
+    - "Deklarativer Satz mit eindeutigem Wahrheitswert"
+    - "Wahrheitswert: wahr oder falsch"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Wahrheitswert"
+  antwort:
+    - "Zuordnung zu einer Aussage"
+    - "Werte: wahr (1) oder falsch (0)"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Negation"
+  antwort:
+    - "Aussage ¬A"
+    - "Wahr genau dann, wenn A falsch ist"
+
+- thema: "Aussagenlogik"
+  frage: "Definition: Konjunktion"
+  antwort:
+    - "Aussage A ∧ B"
+    - "Wahr genau dann, wenn A und B wahr sind"

@@ -1,0 +1,14 @@
+- thema: "Matrizen"
+  frage: "Definition: Matrixmultiplikation"
+  antwort:
+    - "Verknüpfung: K^(m×n) × K^(n×p) → K^(m×p)"
+    - "Für A=[a_ik] und B=[b_kj] gilt: C=AB"
+    - "c_ij = Σ(k=1 bis n) a_ik · b_kj"
+    - "Der Eintrag entsteht durch Skalarprodukt aus i-ter Zeile von A und j-ter Spalte von B"
+
+- thema: "Matrizen"
+  frage: "Definition: Invertierbare Matrix"
+  antwort:
+    - "Eine quadratische Matrix A ∈ K^(n×n)"
+    - "A ist invertierbar, wenn eine Matrix A⁻¹ existiert"
+    - "Es gilt: A⁻¹A = AA⁻¹ = I_n"

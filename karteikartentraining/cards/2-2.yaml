@@ -1,0 +1,13 @@
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Gruppe"
+  antwort:
+    - "Eine Menge G mit einer inneren Verknüpfung +: G × G → G"
+    - "G1: Die Verknüpfung ist assoziativ: (a+b)+c = a+(b+c)"
+    - "G2: Es existiert ein neutrales Element e ∈ G"
+    - "G3: Zu jedem a ∈ G existiert ein inverses Element a⁻¹ ∈ G"
+
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Abel'sche Gruppe"
+  antwort:
+    - "Eine Gruppe (G,+)"
+    - "Zusätzlich gilt das Kommutativgesetz: a+b = b+a für alle a,b ∈ G"

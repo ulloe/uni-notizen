@@ -1,0 +1,6 @@
+- thema: "Algebraische Strukturen"
+  frage: "Definition: Körper"
+  antwort:
+    - "Ein Körper ist ein kommutativer Ring mit Einselement"
+    - "Für jedes a ∈ R \\ {0} existiert ein multiplikatives Inverses a⁻¹ ∈ R"
+    - "Es gilt: a·a⁻¹ = a⁻¹·a = 1"

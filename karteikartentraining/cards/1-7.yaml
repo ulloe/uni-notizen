@@ -1,0 +1,27 @@
+- thema: "Abbildungen"
+  frage: "Definition: Injektive Abbildung"
+  antwort:
+    - "f: A → B ist injektiv"
+    - "∀x₁,x₂ ∈ A: f(x₁)=f(x₂) ⇒ x₁=x₂"
+    - "Verschiedene Elemente aus A haben verschiedene Bilder"
+
+- thema: "Abbildungen"
+  frage: "Definition: Surjektive Abbildung"
+  antwort:
+    - "f: A → B ist surjektiv"
+    - "∀y ∈ B ∃x ∈ A: f(x)=y"
+    - "Jedes Element der Zielmenge wird getroffen"
+
+- thema: "Abbildungen"
+  frage: "Definition: Bijektive Abbildung"
+  antwort:
+    - "f: A → B ist bijektiv"
+    - "f ist injektiv und surjektiv"
+    - "Jedes Element aus B wird von genau einem Element aus A getroffen"
+
+- thema: "Abbildungen"
+  frage: "Definition: Umkehrabbildung"
+  antwort:
+    - "Für bijektives f: A → B existiert f⁻¹: B → A"
+    - "f⁻¹(f(x)) = x für alle x ∈ A"
+    - "f(f⁻¹(y)) = y für alle y ∈ B"

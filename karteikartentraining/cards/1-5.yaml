@@ -1,0 +1,25 @@
+- thema: "Mengen"
+  frage: "Definition: Differenz von Mengen"
+  antwort:
+    - "A \\ B = {x | x ∈ A und x ∉ B}"
+
+- thema: "Mengen"
+  frage: "Definition: Komplement"
+  antwort:
+    - "A^c = {x ∈ U | x ∉ A}"
+    - "U ist die Grundmenge"
+
+- thema: "Mengen"
+  frage: "Definition: Potenzmenge"
+  antwort:
+    - "P(M) = {A | A ⊆ M}"
+
+- thema: "Mengen"
+  frage: "Definition: Kartesisches Produkt"
+  antwort:
+    - "A × B = {(a,b) | a ∈ A und b ∈ B}"
+
+- thema: "Mengen"
+  frage: "Definition: Mächtigkeit"
+  antwort:
+    - "|M| = Anzahl der Elemente von M (falls endlich)"

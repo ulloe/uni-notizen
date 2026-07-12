@@ -1,0 +1,21 @@
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Elementare Zeilenoperationen"
+  antwort:
+    - "Operationen auf Matrizen, die die Lösungsmenge eines linearen Gleichungssystems erhalten"
+    - "Vertauschen zweier Zeilen"
+    - "Multiplikation einer Zeile mit einem Skalar ungleich 0"
+    - "Addition eines Vielfachen einer Zeile zu einer anderen Zeile"
+
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Elementarmatrix"
+  antwort:
+    - "Eine Matrix, die aus der Einheitsmatrix durch eine elementare Zeilenoperation entsteht"
+    - "Links-Multiplikation mit einer Elementarmatrix entspricht einer elementaren Zeilenoperation"
+    - "E ∙ A führt dieselbe Zeilenoperation an A aus wie die Konstruktion von E an I"
+
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Permutationsmatrix"
+  antwort:
+    - "Eine quadratische Matrix, die durch Vertauschen von Zeilen der Einheitsmatrix entsteht"
+    - "Bei Multiplikation PA werden die Zeilen von A entsprechend permutiert"
+    - "In jeder Zeile und Spalte steht genau ein Eintrag 1, alle anderen Einträge sind 0"

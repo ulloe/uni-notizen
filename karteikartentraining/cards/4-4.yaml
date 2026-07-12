@@ -1,0 +1,22 @@
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: LR-Zerlegung mit Pivotierung"
+  antwort:
+    - "Zerlegung einer Matrix A mithilfe einer Permutationsmatrix P"
+    - "Es gilt: PA = LR"
+    - "L ist eine untere Dreiecksmatrix mit Einsen auf der Hauptdiagonalen"
+    - "R ist eine obere Dreiecksmatrix"
+
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Untere Dreiecksmatrix L bei der LR-Zerlegung"
+  antwort:
+    - "Quadratische Matrix"
+    - "Alle Einträge oberhalb der Hauptdiagonalen sind 0"
+    - "Bei der LR-Zerlegung besitzt L zusätzlich Einsen auf der Hauptdiagonalen"
+    - "Entsteht aus den Frobeniusmatrizen"
+
+- thema: "Gauß-Algorithmus"
+  frage: "Definition: Obere Dreiecksmatrix R bei der LR-Zerlegung"
+  antwort:
+    - "Quadratische Matrix"
+    - "Alle Einträge unterhalb der Hauptdiagonalen sind 0"
+    - "Entsteht durch Gauß-Elimination aus PA"

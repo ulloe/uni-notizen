@@ -1,0 +1,34 @@
+- thema: "Matrizen"
+  frage: "Definition: Symmetrische Matrix"
+  antwort:
+    - "Eine quadratische Matrix A"
+    - "Es gilt: A = A^T"
+    - "Einträge sind bezüglich der Hauptdiagonalen gespiegelt gleich"
+
+- thema: "Matrizen"
+  frage: "Definition: Obere Dreiecksmatrix"
+  antwort:
+    - "Eine quadratische Matrix A"
+    - "Alle Einträge unterhalb der Hauptdiagonalen sind 0"
+    - "a_ij = 0 für i > j"
+
+- thema: "Matrizen"
+  frage: "Definition: Untere Dreiecksmatrix"
+  antwort:
+    - "Eine quadratische Matrix A"
+    - "Alle Einträge oberhalb der Hauptdiagonalen sind 0"
+    - "a_ij = 0 für i < j"
+
+- thema: "Matrizen"
+  frage: "Definition: Diagonalmatrix"
+  antwort:
+    - "Eine quadratische Matrix A"
+    - "A ist gleichzeitig obere und untere Dreiecksmatrix"
+    - "Alle Einträge außerhalb der Hauptdiagonalen sind 0"
+
+- thema: "Matrizen"
+  frage: "Definition: Permutationsmatrix"
+  antwort:
+    - "Eine quadratische Matrix"
+    - "In jeder Zeile und jeder Spalte steht genau ein Eintrag 1"
+    - "Alle anderen Einträge sind 0"

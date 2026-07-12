@@ -1,0 +1,13 @@
+- thema: "Matrizen"
+  frage: "Definition: Matrix über einem Körper"
+  antwort:
+    - "Sei K ein Körper und m,n ∈ ℕ₀"
+    - "Eine (m×n)-Matrix über K ist ein Feld A = [a_ij] mit a_ij ∈ K"
+    - "A besitzt m Zeilen und n Spalten"
+
+- thema: "Matrizen"
+  frage: "Definition: Matrixeintrag"
+  antwort:
+    - "a_ij bezeichnet den Eintrag der Matrix A"
+    - "i gibt die Zeile an"
+    - "j gibt die Spalte an"

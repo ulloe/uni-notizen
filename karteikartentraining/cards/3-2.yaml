@@ -1,0 +1,28 @@
+- thema: "Matrizen"
+  frage: "Definition: Addition von Matrizen"
+  antwort:
+    - "Verknüpfung: K^(m×n) × K^(m×n) → K^(m×n)"
+    - "Für A=[a_ij], B=[b_ij] gilt: A+B=[c_ij]"
+    - "c_ij = a_ij + b_ij für alle i,j"
+
+- thema: "Matrizen"
+  frage: "Definition: Skalarmultiplikation von Matrizen"
+  antwort:
+    - "Verknüpfung: K × K^(m×n) → K^(m×n)"
+    - "Für r ∈ K und A=[a_ij] gilt: rA=[r·a_ij]"
+    - "Elemente des Körpers K heißen Skalare"
+
+- thema: "Matrizen"
+  frage: "Definition: Nullmatrix"
+  antwort:
+    - "Matrix 0 ∈ K^(m×n)"
+    - "Alle Einträge sind 0"
+    - "0_ij = 0 für alle i,j"
+
+- thema: "Matrizen"
+  frage: "Definition: Einheitsmatrix"
+  antwort:
+    - "Quadratische Matrix I_n ∈ K^(n×n)"
+    - "Diagonaleinträge sind 1"
+    - "Alle anderen Einträge sind 0"
+    - "Für jede Matrix A gilt: I_n A = A I_n = A"

@@ -1,0 +1,20 @@
+- thema: "Lineare Abbildungen"
+  frage: "Zusammenhang: Kern und lineares Gleichungssystem"
+  antwort:
+    - "Sei f mit Matrix A"
+    - "ker(f) = Lösungsraum von A x = 0"
+    - "Homogenes lineares Gleichungssystem"
+
+- thema: "Lineare Abbildungen"
+  frage: "Zusammenhang: Rang und Matrix"
+  antwort:
+    - "rang(A) = Anzahl der Pivotpositionen"
+    - "rang(A) = Dimension des Bildraums"
+    - "Bestimmbar durch Gauß-Verfahren"
+
+- thema: "Lineare Abbildungen"
+  frage: "Zusammenhang: Rang und Lösungsmenge"
+  antwort:
+    - "dim(ker(f)) = Anzahl der freien Variablen"
+    - "dim(V) = rang(f) + dim(ker(f))"
+    - "Folgt aus dem Dimensionssatz"

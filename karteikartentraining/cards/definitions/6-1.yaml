@@ -1,0 +1,30 @@
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Lineare Abbildung"
+  antwort:
+    - "Abbildung f: V → W zwischen K-Vektorräumen"
+    - "f(v + w) = f(v) + f(w) für alle v,w ∈ V"
+    - "f(λv) = λ f(v) für alle λ ∈ K, v ∈ V"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Homomorphismus"
+  antwort:
+    - "Lineare Abbildung zwischen Vektorräumen"
+    - "Erhält die Vektorraumstruktur (Addition und Skalarmultiplikation)"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Endomorphismus"
+  antwort:
+    - "Lineare Abbildung f: V → V"
+    - "Definitions- und Zielraum sind identisch"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Isomorphismus"
+  antwort:
+    - "Bijektiver linearer Homomorphismus"
+    - "Besitzt eine lineare Umkehrabbildung"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Automorphismus"
+  antwort:
+    - "Isomorphismus f: V → V"
+    - "Bijektive lineare Abbildung auf demselben Raum"

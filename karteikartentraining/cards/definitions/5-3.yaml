@@ -1,0 +1,26 @@
+- thema: "Vektorräume"
+  frage: "Definition: Linearkombination"
+  antwort:
+    - "Seien v₁,…,v_r ∈ V und λ₁,…,λ_r ∈ K"
+    - "Ein Vektor der Form ∑(i=1 bis r) λ_i v_i"
+    - "Heißt Linearkombination der Vektoren v₁,…,v_r"
+
+- thema: "Vektorräume"
+  frage: "Definition: Lineare Hülle (span)"
+  antwort:
+    - "span(v₁,…,v_r) = Menge aller Linearkombinationen von v₁,…,v_r"
+    - "span(v₁,…,v_r) ⊆ V"
+    - "span(∅) = {0}"
+
+- thema: "Vektorräume"
+  frage: "Definition: Erzeugendensystem"
+  antwort:
+    - "Eine Menge {v₁,…,v_r}"
+    - "Heißt Erzeugendensystem eines Vektorraums V"
+    - "Falls span(v₁,…,v_r) = V"
+
+- thema: "Vektorräume"
+  frage: "Definition: Lineare Unabhängigkeit"
+  antwort:
+    - "Vektoren v₁,…,v_r sind linear unabhängig"
+    - "Falls aus ∑(i=1 bis r) λ_i v_i = 0 folgt: λ_i = 0 für alle i"

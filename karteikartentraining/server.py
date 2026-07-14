@@ -10,7 +10,14 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/cards":
             try:
-                files = [f for f in os.listdir(CARDS_DIR) if f.endswith(".yaml")]
+                files = []
+                for root, _, filenames in os.walk(CARDS_DIR):
+                    for f in filenames:
+                        if f.endswith(".yaml"):
+                            full_path = os.path.join(root, f)
+                            rel_path = os.path.relpath(full_path, CARDS_DIR)
+                            files.append(rel_path)
+
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json")
                 self.end_headers()

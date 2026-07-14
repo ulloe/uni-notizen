@@ -1,0 +1,23 @@
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Orthogonalität"
+  antwort:
+    - "u ⟂ v ⇔ ⟨u,v⟩ = 0"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Winkel"
+  antwort:
+    - "Für u,v ≠ 0"
+    - "cos(φ) = ⟨u,v⟩ / (||u|| · ||v||)"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Orthonormalbasis (ONB)"
+  antwort:
+    - "Basis {v₁,…,v_n}"
+    - "⟨v_i,v_j⟩ = 0 für i ≠ j"
+    - "||v_i|| = 1"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Betrag einer komplexen Zahl"
+  antwort:
+    - "z = a + ib"
+    - "|z| = √(a² + b²)"

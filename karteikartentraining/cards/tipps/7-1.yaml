@@ -1,0 +1,17 @@
+- thema: "Euklidische Vektorräume"
+  frage: "Unterschied: Orthogonalprojektion vs. allgemeine Projektion"
+  antwort:
+    - "Orthogonalprojektion: proj_U(v) = nächster Punkt in U (bzgl. Skalarprodukt)"
+    - "v - proj_U(v) ⟂ U"
+    - "Allgemeine Projektion: V = U ⊕ W, v = u + w ⇒ π_U(v) = u"
+    - "Ergebnis abhängig von Wahl von W"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Wie funktioniert das Gram–Schmidt-Verfahren?"
+  antwort:
+    - "Ziel: Erzeuge aus linear unabhängigen Vektoren eine Orthonormalbasis (ONB)"
+    - "Schritt 1: u1 = v1, e1 = u1 / ||u1||"
+    - "Schritt 2: u2 = v2 - <v2,e1> e1, e2 = u2 / ||u2||"
+    - "Schritt 3: u3 = v3 - <v3,e1> e1 - <v3,e2> e2, e3 = u3 / ||u3||"
+    - "Allgemein: vk wird orthogonalisiert an allen vorherigen ei"
+    - "Ergebnis: {e1,...,en} ist Orthonormalbasis"

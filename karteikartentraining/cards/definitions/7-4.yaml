@@ -1,0 +1,22 @@
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Orthogonalprojektion auf einen Unterraum"
+  antwort:
+    - "U ⊆ V Untervektorraum mit ONB {u₁,…,u_k}"
+    - "proj_U(v) = ∑ ⟨v,u_i⟩ u_i"
+    - "proj_U(v) ∈ U"
+    - "v - proj_U(v) ⟂ U"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Eigenschaft: Orthogonalzerlegung"
+  antwort:
+    - "v = u + w"
+    - "u ∈ U, w ⟂ U"
+    - "u = proj_U(v)"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Kreuzprodukt in ℝ³"
+  antwort:
+    - "u × v ∈ ℝ³"
+    - "Orthogonal zu u und v"
+    - "||u × v|| = Fläche des Parallelogramms"
+    - "Berechenbar über Determinante"

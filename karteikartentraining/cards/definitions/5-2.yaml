@@ -1,0 +1,21 @@
+- thema: "Vektorräume"
+  frage: "Definition: Nullvektor"
+  antwort:
+    - "Element 0 ∈ V"
+    - "Neutrales Element bezüglich der Vektoraddition"
+    - "Für alle v ∈ V gilt: v + 0 = v"
+
+- thema: "Vektorräume"
+  frage: "Definition: Untervektorraum"
+  antwort:
+    - "Teilmenge U ⊆ V eines Vektorraums V"
+    - "U ≠ ∅"
+    - "Abgeschlossen bezüglich Vektoraddition"
+    - "Abgeschlossen bezüglich Skalarmultiplikation"
+
+- thema: "Vektorräume"
+  frage: "Definition: Trivialer Untervektorraum"
+  antwort:
+    - "Menge {0}"
+    - "Besteht nur aus dem Nullvektor"
+    - "Ist Untervektorraum jedes Vektorraums"

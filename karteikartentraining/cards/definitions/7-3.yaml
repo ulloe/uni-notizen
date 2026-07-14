@@ -1,0 +1,24 @@
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Bilinearform"
+  antwort:
+    - "Abbildung B: V × V → K"
+    - "Linear in beiden Argumenten"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Sesquilinearform"
+  antwort:
+    - "Abbildung V × V → K"
+    - "Linear in einem Argument"
+    - "Konjugiert-linear im anderen"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Positiv definite hermitische Matrix"
+  antwort:
+    - "A = Aᴴ"
+    - "xᴴ A x > 0 für alle x ≠ 0"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Positiv semidefinite hermitische Matrix"
+  antwort:
+    - "A = Aᴴ"
+    - "xᴴ A x ≥ 0 für alle x"

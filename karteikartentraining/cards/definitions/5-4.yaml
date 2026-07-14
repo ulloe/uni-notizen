@@ -1,0 +1,35 @@
+- thema: "Vektorräume"
+  frage: "Definition: Basis"
+  antwort:
+    - "Eine Menge von Vektoren {v₁,…,v_r}"
+    - "Die Vektoren sind linear unabhängig"
+    - "span(v₁,…,v_r) = V"
+
+- thema: "Vektorräume"
+  frage: "Definition: Dimension"
+  antwort:
+    - "Ein Vektorraum besitzt eine endliche Basis"
+    - "Die Anzahl der Basisvektoren heißt Dimension"
+    - "dim(V) = r für eine Basis mit r Elementen"
+
+- thema: "Vektorräume"
+  frage: "Definition: Summe von Unterräumen"
+  antwort:
+    - "Seien U₁,…,U_r Untervektorräume von V"
+    - "U₁ + … + U_r = {u₁ + … + u_r | u_i ∈ U_i}"
+    - "Ist wieder ein Untervektorraum von V"
+
+- thema: "Vektorräume"
+  frage: "Definition: Direkte Summe"
+  antwort:
+    - "Seien U₁,…,U_r Untervektorräume"
+    - "Die Summe U₁ + … + U_r heißt direkt"
+    - "Falls aus u₁ + … + u_r = 0 folgt: u_i = 0 für alle i"
+
+- thema: "Vektorräume"
+  frage: "Definition: Direkte Summe von Unterräumen"
+  antwort:
+    - "U₁ + U₂ heißt direkte Summe (U₁ ⊕ U₂)"
+    - "Falls für u₁ ∈ U₁, u₂ ∈ U₂ gilt: u₁ + u₂ = 0 ⇒ u₁ = 0, u₂ = 0"
+    - "Äquivalent: U₁ ∩ U₂ = {0}"
+    - "Äquivalent: Darstellung v = u₁ + u₂ ist eindeutig"

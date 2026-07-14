@@ -1,0 +1,23 @@
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Matrixdarstellung einer linearen Abbildung"
+  antwort:
+    - "Seien Basen B von V und C von W"
+    - "f: V → W linear"
+    - "Es existiert eine Matrix A ∈ K^{m×n}"
+    - "Sodass: [f(v)]_C = A · [v]_B"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Basisübergangsmatrix"
+  antwort:
+    - "Matrix, die Koordinaten von einer Basis in eine andere überführt"
+    - "Seien B, B' Basen von V"
+    - "[v]_B' = P · [v]_B"
+    - "P ist invertierbar"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Ähnlichkeitstransformation"
+  antwort:
+    - "Zwei Matrizen A, B ∈ K^{n×n}"
+    - "B = S^{-1} A S für eine invertierbare Matrix S"
+    - "A und B heißen ähnlich"
+    - "Beschreiben dieselbe lineare Abbildung bzgl. verschiedener Basen"

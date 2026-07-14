@@ -1,0 +1,36 @@
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Äquivalenzrelation"
+  antwort:
+    - "Relation ~ auf einer Menge M"
+    - "Reflexiv: a ~ a für alle a ∈ M"
+    - "Symmetrisch: a ~ b ⇒ b ~ a"
+    - "Transitiv: a ~ b, b ~ c ⇒ a ~ c"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Äquivalenzklasse"
+  antwort:
+    - "[a] = {x ∈ M | x ~ a}"
+    - "Menge aller zu a äquivalenten Elemente"
+    - "Partitioniert die Menge M"
+
+- thema: "Lineare Abbildungen"
+  frage: "Charakterisierung: Äquivalenzklasse"
+  antwort:
+    - "A ⊆ X, A ≠ ∅"
+    - "x,y ∈ A ⇒ x ~ y"
+    - "x ∈ A, x ~ y ⇒ y ∈ A"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Quotientenraum V/U"
+  antwort:
+    - "U Untervektorraum von V"
+    - "V/U = {[v] = v + U | v ∈ V}"
+    - "[v] = {v + u | u ∈ U}"
+    - "Vektorraumstruktur über Nebenklassen"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Affiner Unterraum"
+  antwort:
+    - "Menge der Form v + U"
+    - "v ∈ V, U Untervektorraum"
+    - "Verschiebung eines Untervektorraums"

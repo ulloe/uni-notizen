@@ -1,0 +1,27 @@
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Kern einer linearen Abbildung"
+  antwort:
+    - "ker(f) = {v ∈ V | f(v) = 0}"
+    - "Teilmenge des Definitionsraums V"
+    - "Ist ein Untervektorraum von V"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Bild einer linearen Abbildung"
+  antwort:
+    - "im(f) = {f(v) | v ∈ V}"
+    - "Teilmenge des Zielraums W"
+    - "Ist ein Untervektorraum von W"
+
+- thema: "Lineare Abbildungen"
+  frage: "Definition: Rang einer linearen Abbildung"
+  antwort:
+    - "rang(f) = dim(im(f))"
+    - "Dimension des Bildraums"
+    - "Maß für die 'Größe' des Bildes"
+
+- thema: "Lineare Abbildungen"
+  frage: "Satz: Dimensionssatz (Rang-Nullitätssatz)"
+  antwort:
+    - "Sei f: V → W linear"
+    - "dim(V) = dim(ker(f)) + dim(im(f))"
+    - "Gilt für endlichdimensionale Vektorräume"

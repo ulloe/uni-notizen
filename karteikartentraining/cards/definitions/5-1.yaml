@@ -1,0 +1,20 @@
+- thema: "Vektorräume"
+  frage: "Definition: Vektoraddition"
+  antwort:
+    - "Abbildung +: V × V → V"
+    - "Jedem Paar (v,w) wird ein Vektor v+w zugeordnet"
+
+- thema: "Vektorräume"
+  frage: "Definition: Skalarmultiplikation"
+  antwort:
+    - "Abbildung ·: K × V → V"
+    - "Jedem Paar (λ,v) wird ein Vektor λv zugeordnet"
+    - "Elemente aus K heißen Skalare"
+
+- thema: "Vektorräume"
+  frage: "Definition: Vektorraum"
+  antwort:
+    - "(V,+) ist eine abelsche Gruppe"
+    - "Skalarmultiplikation erfüllt: (λ+μ)v = λv + μv"
+    - "λ(v+w) = λv + λw"
+    - "λ(μv) = (λμ)v und 1v = v"

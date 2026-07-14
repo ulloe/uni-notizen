@@ -1,0 +1,28 @@
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Norm"
+  antwort:
+    - "Abbildung ||·||: V → ℝ"
+    - "||v|| ≥ 0 und ||v|| = 0 ⇔ v = 0"
+    - "||λv|| = |λ| · ||v||"
+    - "||v + w|| ≤ ||v|| + ||w||"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: p-Norm auf ℝⁿ"
+  antwort:
+    - "||x||_p = (∑ |x_i|^p)^{1/p}"
+    - "p ≥ 1"
+    - "x = (x₁,…,x_n)"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Skalarprodukt"
+  antwort:
+    - "Abbildung ⟨·,·⟩: V × V → K"
+    - "Linearität und Homogenität in einem Argument"
+    - "⟨v,w⟩ = \\overline{⟨w,v⟩}"
+    - "⟨v,v⟩ ≥ 0 und = 0 ⇔ v = 0"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Definition: Euklidischer Vektorraum"
+  antwort:
+    - "Vektorraum V mit Skalarprodukt ⟨·,·⟩"
+    - "Meist über ℝ"

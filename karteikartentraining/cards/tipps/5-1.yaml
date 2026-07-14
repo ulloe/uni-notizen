@@ -1,0 +1,22 @@
+- thema: "Vektorräume"
+  frage: "Kriterium: Lineare Unabhängigkeit über die Determinante"
+  antwort:
+    - "Gegeben n Vektoren im K^n: schreibe sie als Spalten (oder Zeilen) einer n×n-Matrix A"
+    - "det(A) ≠ 0 ⇒ die Vektoren sind linear unabhängig"
+    - "det(A) = 0 ⇒ die Vektoren sind linear abhängig"
+    - "Nur anwendbar, wenn Anzahl der Vektoren = Dimension (quadratische Matrix)"
+
+- thema: "Vektorräume"
+  frage: "Trick: Determinante einer Dreiecksmatrix"
+  antwort:
+    - "Bei oberer/unterer Dreiecksmatrix (auch Diagonalmatrix) gilt:"
+    - "det(A) = Produkt der Diagonaleinträge"
+    - "Beispiel: Diagonale 1, 1, 5 ⇒ det = 1·1·5 = 5 ≠ 0 ⇒ linear unabhängig"
+    - "Kein Ausrechnen nötig — Dreiecksform erkennen spart Zeit"
+
+- thema: "Vektorräume"
+  frage: "Kurzschluss: Wann bilden n Vektoren eine Basis des K^n?"
+  antwort:
+    - "n Vektoren im K^n sind genau dann eine Basis, wenn sie linear unabhängig sind"
+    - "Äquivalent: die Matrix mit ihnen als Spalten hat det ≠ 0"
+    - "Äquivalent: rang = n (n Pivotpositionen)"

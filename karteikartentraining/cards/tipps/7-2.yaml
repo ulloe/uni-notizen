@@ -1,0 +1,36 @@
+- thema: "Euklidische Vektorräume"
+  frage: "Formel: Winkel zwischen zwei Vektoren (cos φ)"
+  antwort:
+    - "Für u, v ≠ 0 gilt:"
+    - "cos φ = ⟨u,v⟩ / (‖u‖ · ‖v‖)"
+    - "Zähler: Skalarprodukt der beiden Vektoren"
+    - "Nenner: Produkt der beiden Normen"
+    - "φ = arccos( ⟨u,v⟩ / (‖u‖·‖v‖) )"
+    - "Spezialfall: ⟨u,v⟩ = 0 ⇒ cos φ = 0 ⇒ φ = 90° (orthogonal)"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Berechnung: Einheitsvektor (Normierung eines Vektors)"
+  antwort:
+    - "Ziel: Vektor mit gleicher Richtung, aber Norm 1"
+    - "Formel: v̂ = (1 / ‖v‖) · v"
+    - "Also: jede Komponente von v durch ‖v‖ teilen"
+    - "Beispiel: w = (3,0,4), ‖w‖ = 5 ⇒ ŵ = (3/5, 0, 4/5)"
+    - "Probe: ‖v̂‖ = 1 muss gelten"
+    - "Nur für v ≠ 0 möglich (durch 0 teilen verboten)"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Merke: Vorzeichen von Wurzel und Norm"
+  antwort:
+    - "Das Wurzelsymbol √ bezeichnet immer die nicht-negative Wurzel: √9 = 3 (nicht ±3)"
+    - "Eine Norm ist per Axiom immer ≥ 0: ‖v‖ ≥ 0"
+    - "Deshalb steht bei ‖v‖ = √⟨v,v⟩ nie ein ±"
+    - "Das ± kommt nur beim Lösen von Gleichungen vor (x² = 9 ⇒ x = ±3)"
+
+- thema: "Euklidische Vektorräume"
+  frage: "Regel: Skalar aus der Norm ziehen (Homogenität)"
+  antwort:
+    - "‖λ·v‖ = |λ| · ‖v‖"
+    - "Ein Skalar darf als Betrag |λ| vor die Norm gezogen werden"
+    - "Ist eines der Norm-Axiome"
+    - "Anwendung Einheitsvektor: ‖h·v‖ = 1 ⇒ |h|·‖v‖ = 1 ⇒ h = 1/‖v‖"
+    - "Betrag beachten: h = +1/‖v‖ zeigt in Richtung v, h = -1/‖v‖ in die Gegenrichtung"

@@ -20,6 +20,8 @@
     - "Linearität und Homogenität in einem Argument"
     - "⟨v,w⟩ = \\overline{⟨w,v⟩}"
     - "⟨v,v⟩ ≥ 0 und = 0 ⇔ v = 0"
+    - "<r·v,w> = r·<v,w>"
+    - "<u+v,w> = <u,w>+<v,w>"
 
 - thema: "Euklidische Vektorräume"
   frage: "Definition: Euklidischer Vektorraum"

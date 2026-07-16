@@ -1,0 +1,27 @@
+- thema: "Beweistechniken"
+  frage: "Rezept: Wie gehe ich einen Beweis an? (Standard-Vorgehen)"
+  antwort:
+    - "1. Hinschreiben, was GENAU zu zeigen ist — und die Definition des Ziels ausschreiben"
+    - "   (die Definition liefert oft schon die erste Zeile bzw. den Ansatz)"
+    - "2. Checkliste der Voraussetzungen bauen — jede gegebene Eigenschaft = ein Werkzeug"
+    - "3. Werkzeuge nacheinander einsetzen, von der Behauptung Richtung Ziel"
+    - "Kontrolle: meist wird jede Voraussetzung genau einmal benutzt"
+    - "Achtung: Standard-Ansatz, keine Garantie — manche Beweise brauchen eine Zusatzidee"
+
+- thema: "Beweistechniken"
+  frage: "Wann greift das Standard-Rezept (Definition ausschreiben) — und wann nicht?"
+  antwort:
+    - "Greift bei DEFINITIONS-getriebenen Beweisen:"
+    - "  Untervektorraum, linear, injektiv/surjektiv/bijektiv, lineare Unabhängigkeit,"
+    - "  Äquivalenzrelation, 'ker(F) ist Unterraum' usw."
+    - "Reicht allein NICHT bei: Widerspruch, Kontraposition, Induktion,"
+    - "  Hilfsobjekt konstruieren, Fallunterscheidung"
+    - "Aber: Schritt 1 (Ziel ausschreiben) + Schritt 2 (Werkzeuge sammeln) helfen IMMER beim Einstieg"
+
+- thema: "Beweistechniken"
+  frage: "Standard-Anfang: 'Zeige, dass Vektoren linear unabhängig sind'"
+  antwort:
+    - "Erste Zeile schreibt sich von selbst (Definition rückwärts):"
+    - "'Seien λ₁w₁ + … + λₙwₙ = 0. Zu zeigen: alle λᵢ = 0.'"
+    - "Dann Werkzeuge einsetzen (z. B. Linearität, Injektivität/Kern, Unabhängigkeit in V)"
+    - "bis man λ₁ = … = λₙ = 0 erzwingt"

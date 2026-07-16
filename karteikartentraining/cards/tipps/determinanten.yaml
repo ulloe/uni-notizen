@@ -1,0 +1,18 @@
+- thema: "Determinanten"
+  frage: "Laplace'scher Entwicklungssatz (Determinante berechnen)"
+  antwort:
+    - "Entwickle nach einer Zeile i oder Spalte j:"
+    - "det(A) = Σⱼ (-1)^(i+j) · a_ij · M_ij   (Entwicklung nach Zeile i)"
+    - "M_ij = Minor = Determinante der Restmatrix (Zeile i und Spalte j streichen)"
+    - "(-1)^(i+j) = Vorzeichen; C_ij = (-1)^(i+j)·M_ij heißt Kofaktor"
+    - "Funktioniert für jede n×n-Matrix (auch 4×4 und größer, wo Sarrus versagt)"
+
+- thema: "Determinanten"
+  frage: "Laplace: Vorzeichenschema und Tipp zur Wahl"
+  antwort:
+    - "Schachbrettmuster der Vorzeichen (-1)^(i+j):"
+    - "  + - + ..."
+    - "  - + - ..."
+    - "  + - + ..."
+    - "TIPP: nach der Zeile/Spalte mit den MEISTEN NULLEN entwickeln"
+    - "(jede 0 spart einen kompletten Minor → viel weniger Rechnung)"

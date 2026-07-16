@@ -1,0 +1,29 @@
+- thema: "Lineare Abbildungen"
+  frage: "Kriterium: Injektivität über den Kern"
+  antwort:
+    - "f: V → W linear ist injektiv ⟺ ker(f) = {0} ⟺ dim(ker f) = 0"
+    - "Folglich: dim(ker f) > 0 ⇒ f ist NICHT injektiv"
+    - "Anschaulich: außer dem Nullvektor wird noch etwas auf 0 abgebildet"
+
+- thema: "Lineare Abbildungen"
+  frage: "Kriterium: Surjektivität über den Rang"
+  antwort:
+    - "f: V → W linear ist surjektiv ⟺ im(f) = W"
+    - "Bei endlichdimensionalem W: ⟺ dim(im f) = dim(W), also rang(f) = dim(W)"
+    - "Grund: im(f) ist Unterraum von W; gleiche Dimension ⇒ im(f) = W"
+
+- thema: "Lineare Abbildungen"
+  frage: "Kniff: injektiv = surjektiv bei gleicher Dimension"
+  antwort:
+    - "Ist dim(V) = dim(W) (insbesondere Endomorphismus f: V → V), so gilt:"
+    - "f injektiv ⟺ f surjektiv ⟺ f bijektiv"
+    - "Folgt aus dem Dimensionssatz: dim V = dim(ker f) + dim(im f)"
+    - "Es genügt also, EINES von beiden zu prüfen (spart Zeit)"
+
+- thema: "Lineare Abbildungen"
+  frage: "Kniff: äquivalente Aussagen für eine quadratische Matrix A (n×n)"
+  antwort:
+    - "Für A ∈ K^(n×n) sind folgende Aussagen alle äquivalent:"
+    - "A invertierbar ⟺ det(A) ≠ 0 ⟺ rang(A) = n"
+    - "⟺ ker = {0} (injektiv) ⟺ im = K^n (surjektiv) ⟺ bijektiv"
+    - "⟺ Spalten linear unabhängig ⟺ Ax = 0 hat nur die triviale Lösung"

@@ -18,6 +18,8 @@
   frage: "Definition: Kartesisches Produkt"
   antwort:
     - "A × B = {(a,b) | a ∈ A und b ∈ B}"
+    - "Ein Kartesisches Produkt verknüpft zwei Mengen, indem es alle möglichen Kombinationen aus den Elementen beider Mengen bildet"
+    - "A =  {1,2,3} und B = {1,2} => A × B = { (1,2), (1,3) (2,2), (2,3) (3,2), (3,3) }"
 
 - thema: "Mengen"
   frage: "Definition: Mächtigkeit"

@@ -16,3 +16,19 @@
     - "  + - + ..."
     - "TIPP: nach der Zeile/Spalte mit den MEISTEN NULLEN entwickeln"
     - "(jede 0 spart einen kompletten Minor → viel weniger Rechnung)"
+
+- thema: "Determinanten"
+  frage: "Determinanten-Multiplikationssatz"
+  antwort:
+    - "det(X·Y) = det(X)·det(Y)"
+    - "Gilt für quadratische Matrizen X, Y gleicher Größe"
+    - "Achtung: det(X+Y) ≠ det(X)+det(Y) (nur Produkt, nicht Summe!)"
+
+- thema: "Determinanten"
+  frage: "Determinante von Inverser und ähnlichen Matrizen"
+  antwort:
+    - "det(S⁻¹) = 1/det(S)   (folgt aus det(S⁻¹·S) = det(I) = 1)"
+    - "det(A⁻¹) = 1/det(A)"
+    - "det(I) = 1"
+    - "Ähnliche Matrizen: det(S⁻¹AS) = det(S⁻¹)·det(A)·det(S) = det(A)"
+    - "Also haben ähnliche Matrizen dieselbe Determinante"
